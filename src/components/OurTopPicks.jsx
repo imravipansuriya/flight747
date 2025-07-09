@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Nav, Tab, Card } from 'react-bootstrap'; // Added Card for product rendering
-import { FaRegHeart, FaRegEye, FaShoppingBag, FaExpandArrowsAlt } from 'react-icons/fa'; // Added for product hover icons
+import { Container, Row, Col, Nav, Tab, Card } from 'react-bootstrap';  
+import { FaRegHeart, FaRegEye, FaShoppingBag, FaExpandArrowsAlt } from 'react-icons/fa'; 
 
 
 const OurTopPicks = () => {
-  // Define your product data first.
-  // I'm using the exact products from your 'Premium Wines' request for 'allWines'
-  // to ensure consistency and include the full product card structure.
+   
   const allWinesProducts = [
     {
       id: 1,
       name: '2020 Limited Release Le Rosé',
       price: '$29.00',
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image3_1024x.jpg?v=1638848302', // Placeholder - Replace with your actual image URL
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: true,
     },
     {
@@ -21,7 +19,7 @@ const OurTopPicks = () => {
       name: '2017 Duckhorn Vineyards...',
       price: '$29.00',
       oldPrice: '$36.00',
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image1_1024x.jpg?v=1638848302', // Placeholder - Replace with your actual image URL
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: true,
     },
     {
@@ -29,7 +27,7 @@ const OurTopPicks = () => {
       name: '2019 Vineyards Napa Valley...',
       price: '$24.00',
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image2_1024x.jpg?v=1638848302', // Placeholder - Replace with your actual image URL
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: false, // Assuming this one is not organic
     },
     {
@@ -37,7 +35,7 @@ const OurTopPicks = () => {
       name: 'Polugar Classic Rye',
       price: '$28.60', // Corrected price based on typical values
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image4_1024x.jpg?v=1638848302', // Placeholder - Replace with your actual image URL
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: false, // Assuming this one is not organic
     },
   ];
@@ -49,7 +47,7 @@ const OurTopPicks = () => {
       name: 'Best Seller Wine A',
       price: '$45.00',
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image5_1024x.jpg?v=1638848302', // Placeholder
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: true,
     },
     {
@@ -57,7 +55,7 @@ const OurTopPicks = () => {
       name: 'Best Seller Wine B',
       price: '$30.00',
       oldPrice: '$35.00',
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image6_1024x.jpg?v=1638848302', // Placeholder
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: false,
     },
   ];
@@ -68,7 +66,7 @@ const OurTopPicks = () => {
       name: 'Exclusive Reserve',
       price: '$120.00',
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image7_1024x.jpg?v=1638848302', // Placeholder
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: true,
     },
   ];
@@ -79,7 +77,7 @@ const OurTopPicks = () => {
       name: 'Sparkling Rosé',
       price: '$38.00',
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image8_1024x.jpg?v=1638848302', // Placeholder
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: false,
     },
     {
@@ -87,7 +85,7 @@ const OurTopPicks = () => {
       name: 'Dessert Wine',
       price: '$55.00',
       oldPrice: null,
-      image: 'https://ap-bodoni.myshopify.com/cdn/shop/products/product_detail_image9_1024x.jpg?v=1638848302', // Placeholder
+      image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
       organic: false,
     },
   ];

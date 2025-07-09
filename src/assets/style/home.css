@@ -1,107 +1,210 @@
-.container-xxl{
+.HeroSlider .carousel-item {
+    height: 700px;
+    position: relative;
+}
+
+.HeroSlider .carousel-item:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgb(0 0 0 / 90%) 0%, rgba(0, 0, 0, 0.359) 70%);
+}
+
+.HeroSlider .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.HeroSlider .carousel-item .carousel-caption {
+    position: absolute;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.HeroSlider .carousel-item .carousel-caption span {
+    font-family: "Tangerine", cursive;
+    display: block;
+    font-size: 80px;
+}
+
+.HeroSlider .carousel-item .carousel-caption h3 {
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.HeroSlider .carousel-item .carousel-caption p {
+    font-size: 16px;
+}
+
+.hero-banner-section {
+    position: relative;
+    background-image: url("../images/section-bg.jpg");
+    height: 545px;
+    background-position: center;
+}
+.promo-card {
+    padding: 50px;
+    color: #fff;
+    height: 338px;
+}
+.promo-card  .promo-subtitle{
     
 }
-
-.carousel-item {
-    height: 480px;
+.white-wine-card{
+    position: relative;
+    background-image: url("../images/collection.jpg"); 
+}
+.red-wine-card{
+        position: relative;
+    background-image: url("../images/everyday.jpg"); 
+    background-position: center;
+}
+.hero-banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
-/* FeatureSection.css */
+.hero-banner-section .hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
 
 .feature-section-container {
-    padding: 50px 0;
-    /* Adjust padding as needed */
-    background-color: #f8f8f8;
-    /* A light background, adjust to match your image */
+    padding: 60px 0;
     color: #333;
-    /* Default text color */
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .feature-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    gap: 20px;
+}
+
+.feature-item .img-text {
+    text-align: left;
 }
 
 .feature-icon {
-    color: #c09f87;
-    /* This is an approximate color from your screenshot, adjust as needed */
-    margin-bottom: 15px;
+    color: #007cc4;
+    margin-bottom: 0;
 }
 
 .feature-title {
-    font-size: 1.1em;
-    font-weight: bold;
     margin-bottom: 5px;
-    color: #555;
-    /* Adjust title color */
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0;
 }
 
 .feature-description {
-    font-size: 0.9em;
-    color: #777;
-    /* Adjust description color */
-    line-height: 1.4;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin: 0;
 }
 
-
-/* CategoryGrid.css */
+.category-container {
+    max-width: 1260px;
+}
 
 .category-grid-section {
     background-color: #ffffff;
-    /* Or a very light off-white if that's the page background */
     padding: 40px 0;
-    /* Adjust overall section padding */
+    margin: 130px 0;
+}
+
+.category-grid-section .category-card {
+    background-size: contain;
+    padding: 50px;
+}
+
+.category-grid-section div:first-child .category-card {
+    background-image: url("../images/card-1.jpg");
+}
+
+.category-grid-section div:nth-child(2) .category-card {
+    background-image: url("../images/card-2.png");
+}
+
+.category-grid-section div:nth-child(3) .category-card {
+    background-image: url("../images/card-3.jpg");
+}
+
+.category-grid-section div:nth-child(4) .category-card {
+    background-image: url("../images/card-4.jpg");
+}
+
+.category-grid-section div:nth-child(5) .category-card {
+    background-image: url("../images/card-5.jpg");
 }
 
 .category-card {
-    display: flex;
-    flex-direction: row;
-    /* Default layout: content on left, image on right */
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 5px;
-    /* Slight rounded corners if desired */
+    border: none;
+    border-radius: 0;
     overflow: hidden;
-    /* Important for image overflow */
-    height: 200px;
-    /* Fixed height for all cards, adjust as needed */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    /* Subtle shadow */
+    margin-bottom: 24px;
 }
 
 .category-content {
     flex-basis: 45%;
-    /* Adjust width for content */
     padding-right: 15px;
-    /* Space between text and image */
 }
 
 .category-title {
     font-size: 1.5em;
-    /* Adjust font size */
     font-weight: bold;
     color: #333;
-    /* Darker text color */
     margin-bottom: 10px;
 }
 
+.product-slider-section {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+
+
 .shop-link {
-    font-size: 0.9em;
-    color: #c09f87;
-    /* Match your brand's accent color */
+    color: #666;
     text-decoration: none;
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
+    font-size: 12px;
 }
 
 .shop-link:hover {
     color: #a38775;
-    /* Slightly darker on hover */
     text-decoration: underline;
 }
 
@@ -109,51 +212,26 @@
     margin-left: 5px;
 }
 
-.category-image-wrapper {
-    flex-basis: 55%;
-    /* Adjust width for image */
-    display: flex;
-    justify-content: flex-end;
-    /* Align image to the right */
-    align-items: center;
-    height: 100%;
-    /* Ensure wrapper takes full height for image placement */
-}
 
 .category-image {
     max-height: 100%;
-    /* Ensure image fits within its wrapper height */
     width: auto;
-    /* Maintain aspect ratio */
     object-fit: contain;
-    /* Ensure the whole image is visible within its area */
     transform: translateX(10%);
-    /* Adjust to push image slightly off-card as in screenshot */
 }
 
-/* Specific adjustments for 'GIFTS' card as it's different in screenshot */
 .category-grid-section .col:nth-child(2) .category-image {
-    /* For the gifts image, it looks like it's contained more within the box */
     transform: translateX(0);
-    /* Remove the translation */
     object-fit: contain;
-    /* Ensure full image visibility */
     max-height: 90%;
-    /* Adjust to ensure it fits well */
     width: auto;
-    /* Maintain aspect ratio */
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 991.98px) {
-
-    /* On small to medium devices, stack content and image */
     .category-card {
         flex-direction: column;
         height: auto;
-        /* Auto height when stacked */
         padding: 25px;
-        /* More padding when stacked */
         text-align: center;
     }
 
@@ -161,33 +239,26 @@
         flex-basis: auto;
         padding-right: 0;
         margin-bottom: 15px;
-        /* Space between content and image when stacked */
     }
 
     .shop-link {
         justify-content: center;
-        /* Center the "Shop Now" link */
     }
 
     .category-image-wrapper {
         flex-basis: auto;
         justify-content: center;
-        /* Center image when stacked */
         max-height: 180px;
-        /* Limit image height on smaller screens */
         width: 100%;
     }
 
     .category-image {
         max-height: 100%;
         transform: translateX(0);
-        /* Remove translation when stacked */
     }
 }
 
 @media (max-width: 575.98px) {
-
-    /* Further adjustments for extra small devices (phones) */
     .category-card {
         padding: 20px;
     }
@@ -201,7 +272,6 @@
     }
 }
 
-/* Responsive adjustments */
 @media (max-width: 767.98px) {
     .feature-item {
         padding: 15px;
@@ -214,9 +284,7 @@
     }
 }
 
-
 .top-picks-section {
-    background-color: #FDFCF7;
     padding: 80px 0;
     font-family: serif;
     color: #333;
@@ -269,7 +337,6 @@
     border-color: #c09f87;
 }
 
-/* Product Display */
 .product-item {
     display: flex;
     justify-content: center;
@@ -327,9 +394,7 @@
 .product-image-container {
     position: relative;
     overflow: hidden;
-    background-color: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -399,7 +464,6 @@
     border-color: #c09f87;
 }
 
-/* Card Body Content */
 .product-card .card-body {
     padding: 10px 10px 0;
 }
@@ -484,7 +548,6 @@
     }
 }
 
-
 @media (max-width: 991.98px) {
     .section-title {
         font-size: 2.2em;
@@ -531,19 +594,12 @@
 
     .product-item {
         height: 180px;
-        /* Further adjust height for very small screens */
     }
 }
 
-
-/* FromTheBlog.css */
-
-.blog-section {
-    background-color: #FDFCF7;
-    /* Light background */
+.blog-section { 
     padding: 80px 0;
     font-family: serif;
-    /* Consistent font */
     color: #333;
 }
 
@@ -551,7 +607,6 @@
     font-size: 0.8em;
     letter-spacing: 2px;
     color: #c09f87;
-    /* Accent color */
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -573,15 +628,10 @@
 .blog-post-card {
     border: none;
     border-radius: 8px;
-    /* Subtle rounded corners */
     overflow: hidden;
-    /* Ensures image corners are rounded */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    /* Subtle shadow */
     text-align: left;
-    /* Content is left-aligned */
     height: 100%;
-    /* Ensure cards in a row have equal height */
     display: flex;
     flex-direction: column;
 }
@@ -590,28 +640,23 @@
     position: relative;
     overflow: hidden;
     height: 220px;
-    /* Fixed height for blog images */
 }
 
 .blog-post-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensures image covers the area without distortion */
     transition: transform 0.3s ease;
 }
 
 .blog-post-card:hover .blog-post-image {
     transform: scale(1.05);
-    /* Slight zoom on hover */
 }
 
 .blog-date-overlay {
     position: absolute;
     bottom: 15px;
-    /* Adjust position as per screenshot */
     left: 15px;
-    /* Adjust position as per screenshot */
     background-color: white;
     color: #333;
     padding: 8px 12px;
@@ -619,7 +664,6 @@
     font-size: 0.8em;
     text-align: center;
     line-height: 1;
-    /* Keep lines close */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -631,7 +675,6 @@
     font-size: 1.5em;
     font-weight: bold;
     color: #c09f87;
-    /* Accent color for day */
 }
 
 .blog-month {
@@ -642,11 +685,9 @@
 .blog-card-body {
     padding: 25px;
     flex-grow: 1;
-    /* Allow body to take available height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Push read more to bottom if content varies */
 }
 
 .blog-meta {
@@ -663,7 +704,6 @@
 
 .blog-meta .meta-link:hover {
     color: #c09f87;
-    /* Accent color on hover */
 }
 
 .blog-post-title {
@@ -680,36 +720,29 @@
     line-height: 1.5;
     margin-bottom: 15px;
     flex-grow: 1;
-    /* Allow description to take available space */
 }
 
 .read-more-link {
     color: #c09f87;
-    /* Accent color */
     text-decoration: none;
     font-size: 0.9em;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     display: inline-flex;
-    /* For icon alignment */
     align-items: center;
     transition: color 0.2s ease;
 }
 
 .read-more-link:hover {
     color: #a08060;
-    /* Slightly darker accent on hover */
 }
 
 .read-more-link i {
     margin-left: 8px;
-    /* Space between text and icon */
     font-size: 0.8em;
-    /* Adjust icon size */
 }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 991.98px) {
     .blog-title {
         font-size: 2.2em;
@@ -717,7 +750,6 @@
 
     .blog-image-wrapper {
         height: 200px;
-        /* Adjust image height */
     }
 }
 
@@ -736,7 +768,6 @@
 
     .blog-image-wrapper {
         height: 180px;
-        /* Further adjust image height */
     }
 
     .blog-post-title {
@@ -747,7 +778,6 @@
 @media (max-width: 575.98px) {
     .blog-post-card {
         margin-bottom: 20px !important;
-        /* Ensure spacing when stacked */
     }
 
     .blog-post-title {
@@ -760,20 +790,13 @@
 
     .blog-image-wrapper {
         height: 200px;
-        /* Can make taller for mobile if one per row */
     }
 }
 
-
-/* MailingListSection.css */
-
 .mailing-list-section {
-    background-color: #F8F5F0;
-    /* Light background similar to screenshot */
+    background-image: url("../images/bg.jpg");
     padding: 100px 0;
-    /* Generous padding top/bottom */
     font-family: serif;
-    /* Consistent font-family */
     color: #333;
 }
 
@@ -781,7 +804,6 @@
     font-size: 0.8em;
     letter-spacing: 2px;
     color: #c09f87;
-    /* Accent color */
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -791,38 +813,30 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 40px;
-    /* Space between title and input */
 }
 
-/* Email Input Specifics */
 .email-input-container {
     max-width: 450px;
-    /* Control input width */
     margin: 0 auto 30px auto;
-    /* Center input and add bottom margin */
     position: relative;
-    /* For background graphic if any */
 }
 
 .mailing-list-email-input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #ccc;
-    /* Thin line at the bottom */
     border-radius: 0;
     padding: 10px 0;
     text-align: center;
     color: #333;
     font-size: 1.1em;
     width: 100%;
-    /* Take full width of its container */
 }
 
 .mailing-list-email-input:focus {
     outline: none;
     box-shadow: none;
     border-color: #c09f87;
-    /* Accent color on focus */
 }
 
 .mailing-list-email-input::placeholder {
@@ -832,21 +846,16 @@
     font-size: 0.9em;
 }
 
-/* Privacy Text */
 .mailing-list-privacy-text {
     font-size: 0.9em;
     color: #888;
     line-height: 1.5;
     margin-bottom: 30px;
-    /* Space before button */
 }
 
-/* Subscribe Button */
 .subscribe-btn {
     border-color: #c09f87;
-    /* Accent color border */
     color: #c09f87;
-    /* Accent color text */
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 0.9em;
@@ -857,24 +866,14 @@
 
 .subscribe-btn:hover {
     background-color: #c09f87;
-    /* Accent color fill on hover */
     color: white;
     border-color: #c09f87;
 }
 
-/* Background graphic */
-/* If you want the subtle background graphic (world map outline),
-   you'd apply it here. This assumes the graphic is part of the section's background. */
 .mailing-list-section {
     position: relative;
-    /* Example: If the graphic is a separate element or part of this background */
-    /* background-image: url('URL_TO_YOUR_WORLD_MAP_GRAPHIC.png'); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center 20%; Adjust position as needed */
-    /* background-size: auto; or specific size like 150px 150px; */
 }
 
-/* Adjust for smaller screens */
 @media (max-width: 767.98px) {
     .mailing-list-section {
         padding: 60px 0;
@@ -887,7 +886,6 @@
 
     .email-input-container {
         max-width: 300px;
-        /* Make input narrower on small screens */
     }
 
     .mailing-list-email-input {
@@ -904,53 +902,37 @@
     }
 }
 
-/* ClientLogoSlider.css */
-
-.client-logo-section {
-    background-color: #FDFCF7;
-    /* Light background for the section */
+.client-logo-section { 
     padding: 40px 0;
-    /* Vertical padding */
     overflow: hidden;
-    /* Important to hide parts of logos outside the viewport */
 }
 
 .client-logo-swiper {
     width: 100%;
     height: auto;
-    /* Allow height to adjust to logo images */
 }
 
 .client-logo-slide {
     display: flex;
     justify-content: center;
-    /* Center logo horizontally within its slide */
     align-items: center;
-    /* Center logo vertically within its slide */
     min-height: 80px;
-    /* Minimum height for slides to keep consistency */
 }
 
 .client-logo-image {
     max-width: 120px;
-    /* Maximum width for the logos */
     max-height: 60px;
-    /* Maximum height for the logos */
     width: auto;
     height: auto;
     object-fit: contain;
-    /* Ensures the whole logo is visible */
     filter: grayscale(100%) opacity(0.7);
-    /* Optional: Grayscale and slight transparency for a muted look */
     transition: filter 0.3s ease;
 }
 
 .client-logo-image:hover {
     filter: grayscale(0%) opacity(1);
-    /* Optional: Full color and opacity on hover */
 }
 
-/* Adjustments for very small screens */
 @media (max-width: 575.98px) {
     .client-logo-section {
         padding: 20px 0;
@@ -966,30 +948,21 @@
     }
 }
 
-
-/* Footer.css */
-
 .site-footer {
     background-color: #31353C;
-    /* Dark background color from screenshot */
     color: #fff;
     font-family: Arial, sans-serif;
-    /* A more common sans-serif for footer text */
 }
 
 .main-footer-content {
     padding-bottom: 3rem;
-    /* Add some padding to the bottom of the main content */
 }
 
 .footer-col {
     padding-left: 15px;
-    /* Adjust as needed */
     padding-right: 15px;
-    /* Adjust as needed */
 }
 
-/* --- Footer Logo Column --- */
 .footer-logo-col {
     display: flex;
     flex-direction: column;
@@ -1006,14 +979,12 @@
 
 .footer-logo img {
     max-width: 150px;
-    /* Adjust logo size */
     height: auto;
     margin-bottom: 10px;
 }
 
 .footer-logo .logo-text {
     font-size: 1.8em;
-    /* Main logo text size */
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 1;
@@ -1022,25 +993,20 @@
 
 .footer-logo .logo-subtext {
     font-size: 0.9em;
-    /* "VINEYARDS" text size */
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #c09f87;
-    /* Accent color for vineyards */
 }
 
-/* --- Headings --- */
 .footer-heading {
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 25px;
     color: #c09f87;
-    /* Accent color for headings */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* --- Links Lists (Useful Link, Shop) --- */
 .footer-links {
     padding-left: 0;
 }
@@ -1051,7 +1017,6 @@
 
 .footer-links a {
     color: #bbb;
-    /* Lighter grey for links */
     text-decoration: none;
     font-size: 0.95em;
     transition: color 0.2s ease;
@@ -1059,13 +1024,10 @@
 
 .footer-links a:hover {
     color: #c09f87;
-    /* Accent color on hover */
 }
 
-/* --- Social Icons --- */
 .social-icons a {
     color: #bbb;
-    /* Lighter grey for icons */
     font-size: 1.2em;
     margin-right: 15px;
     transition: color 0.2s ease;
@@ -1073,13 +1035,10 @@
 
 .social-icons a:hover {
     color: #c09f87;
-    /* Accent color on hover */
 }
 
-/* --- Contact Info --- */
 .contact-info p {
     color: #bbb;
-    /* Lighter grey for contact text */
     font-size: 0.95em;
     line-height: 1.6;
     margin-bottom: 8px;
@@ -1087,20 +1046,16 @@
 
 .contact-info a {
     color: #bbb;
-    /* Lighter grey for email link */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .contact-info a:hover {
     color: #c09f87;
-    /* Accent color on hover */
 }
 
-/* --- Bottom Footer (Copyright) --- */
 .bottom-footer {
     background-color: #272B30;
-    /* Slightly darker background for bottom bar */
     color: #aaa;
     font-size: 0.85em;
 }
@@ -1117,13 +1072,10 @@
 
 .footer-mini-icon img {
     width: 30px;
-    /* Size of the small wine bottle icon */
     height: auto;
     opacity: 0.7;
-    /* Slightly faded as in screenshot */
 }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 767.98px) {
     .main-footer-content {
         padding-top: 2rem;
@@ -1132,16 +1084,12 @@
 
     .footer-col {
         margin-bottom: 30px;
-        /* Add space between stacked columns */
         text-align: center;
-        /* Center content for stacked columns */
         align-items: center;
-        /* Center flex items */
     }
 
     .footer-logo-col {
         align-items: center;
-        /* Center logo on mobile */
     }
 
     .footer-links,
@@ -1153,14 +1101,11 @@
 
     .social-icons {
         justify-content: center;
-        /* Center social icons horizontally */
         display: flex;
         flex-wrap: wrap;
-        /* Allow icons to wrap */
     }
 
     .social-icons a {
         margin: 0 8px 10px;
-        /* Adjust margin for wrapped icons */
     }
 }

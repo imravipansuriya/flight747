@@ -1,3 +1,5 @@
+ 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,12 +39,15 @@ img {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #007cc4;
   text-decoration: inherit;
+}
+.btn-primary{
+   background-color: #007cc4;
 }
 
 a:hover {
-  color: #535bf2;
+  color: #007cc4;
 }
 
 body {
@@ -51,7 +56,7 @@ body {
   /* font-family: "Faculty Glyphic", sans-serif; ---  Title text */
   /* font-family: "Tangerine", cursive;   -- Writing text */
 }
- 
+
 
 
 h1 {
@@ -69,6 +74,18 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+.btn {
+  border-radius: 0;
+  color: #fff;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  position: relative;
+  transition: all .3s;
+  padding: 20px 30px;
 }
 
 button:hover {
@@ -92,5 +109,18 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
   }
 }

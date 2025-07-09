@@ -10,6 +10,13 @@ import MailingListSection from "../components/MailingListSection";
 import ClientLogoSlider from "../components/ClientLogoSlider";
 import Footer from "../components/layout/Footer";
 import HeroSlider from "../components/HeroSlider";
+import { CiGift } from "react-icons/ci";
+import { SiWine } from "react-icons/si";
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { GiWineGlass } from "react-icons/gi";
+import { BsBox2Heart } from "react-icons/bs";
+import { PiWineDuotone } from "react-icons/pi";
+import CategoryHome from "../components/CategoryHome";
 
 const Home = () => {
 
@@ -129,69 +136,69 @@ const Home = () => {
 
     return (
         <div>
-            <Container  fluid="xxl">
-               <HeroSlider/>
+            <Container fluid="xxl">
+                <HeroSlider />
             </Container>
             <Container>
                 <div className="feature-section-container">
                     <Container>
                         <Row className="justify-content-center text-center">
-                            {/* Feature 1: Up to 40% Discount */}
-                            <Col xs={12} sm={6} md={3} className="feature-item my-3">
-                                <FaGift size={40} className="feature-icon" />
-                                <h5 className="feature-title">UP TO 40% DISCOUNT</h5>
-                                <p className="feature-description">On all your wine orders</p>
+                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                                <div className="feature-item">
+                                    <div className="img-icon">
+                                        <CiGift size={40} className="feature-icon" />
+                                    </div>
+                                    <div className="img-text">
+                                        <h5 className="feature-title">UP TO 40% DISCOUNT</h5>
+                                        <p className="feature-description">On all your wine orders</p>
+                                    </div>
+                                </div>
                             </Col>
 
-                            {/* Feature 2: Custom Packages */}
-                            <Col xs={12} sm={6} md={3} className="feature-item my-3">
-                                <FaBoxOpen size={40} className="feature-icon" />
-                                <h5 className="feature-title">CUSTOM PACKAGES</h5>
-                                <p className="feature-description">Making your gift box by yourself</p>
+                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                                <div className="feature-item">
+                                    <div className="img-icon">
+                                        <BsBox2Heart size={30} className="feature-icon" />
+                                    </div>
+                                    <div className="img-text">
+                                        <h5 className="feature-title">CUSTOM PACKAGES</h5>
+                                        <p className="feature-description">Making your gift box by yourself</p>
+                                    </div>
+                                </div>
                             </Col>
 
-                            {/* Feature 3: Easy & Secure Shopping */}
-                            <Col xs={12} sm={6} md={3} className="feature-item my-3">
-                                <FaWineGlassAlt size={40} className="feature-icon" />
-                                <h5 className="feature-title">EASY & SECURE SHOPPING</h5>
-                                <p className="feature-description">No risk online shopping</p>
+                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                                <div className="feature-item">
+                                    <div className="img-icon">
+                                        <PiWineDuotone size={30} className="feature-icon" />
+                                    </div>
+                                    <div className="img-text">
+                                        <h5 className="feature-title">EASY & SECURE SHOPPING</h5>
+                                        <p className="feature-description">No risk online shopping</p>
+                                    </div>
+                                </div>
                             </Col>
 
-                            {/* Feature 4: Free Shipping & Payment */}
-                            <Col xs={12} sm={6} md={3} className="feature-item my-3">
-                                <FaTruck size={40} className="feature-icon" />
-                                <h5 className="feature-title">FREE SHIPPING & PAYMENT</h5>
-                                <p className="feature-description">An order from $500</p>
+                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                                <div className="feature-item">
+                                    <div className="img-icon">
+                                        <LiaShippingFastSolid size={30} className="feature-icon" />
+                                    </div>
+                                    <div className="img-text">
+                                        <h5 className="feature-title">FREE SHIPPING & PAYMENT</h5>
+                                        <p className="feature-description">An order from $500</p>
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                     </Container>
                 </div>
             </Container>
-            <Container>
-                <div className="category-grid-section py-5">
-
-                    <Row className="g-4 justify-content-center"> {/* g-4 adds gutter space */}
-                        {categories.map((category, index) => (
-                            <Col key={index} xs={12} sm={6} lg={4}> {/* Responsive columns */}
-                                <div className="category-card" style={{ backgroundColor: category.bgColor }}>
-                                    <div className="category-content">
-                                        <h3 className="category-title">{category.title}</h3>
-                                        <a href={category.shopLink} className="shop-link">
-                                            SHOP NOW <FaArrowRight className="arrow-icon" />
-                                        </a>
-                                    </div>
-                                    <div className="category-image-wrapper">
-                                        <img src={category.image} alt={category.title} className="category-image img-fluid" />
-                                    </div>
-                                </div>
-                            </Col>
-                        ))}
-                    </Row>
-
-                </div>
+            <Container className="category-container">
+                <CategoryHome />
             </Container>
             <Container>
-                <div className="product-slider-section py-5">
+                <div className="product-slider-section">
                     <Container className="text-center">
                         <p className="shop-text">SHOP</p>
                         <h2 className="section-title">Premium Wines</h2>
@@ -256,7 +263,7 @@ const Home = () => {
             <Container>
                 <div className="discover-section-wrapper">
                     {/* Top Hero/Banner Section */}
-                    <div className="hero-banner-section" style={{ backgroundImage: `url('https://ap-bodoni.myshopify.com/cdn/shop/files/hero_banner_bg.jpg?v=1638848302')` }}>
+                    <div className="hero-banner-section">
                         <Container className="h-100 d-flex align-items-center justify-content-center text-center">
                             <div className="hero-content">
                                 <p className="hero-subtitle">Discover</p>
@@ -270,11 +277,11 @@ const Home = () => {
                     </div>
 
                     {/* Two Promotional Cards Section */}
-                    <Container className="promo-cards-container mt-4">
+                    <div className="promo-cards-container mt-4">
                         <Row className="g-4"> {/* g-4 for gutters */}
                             {/* White Wine Card */}
                             <Col xs={12} md={6}>
-                                <div className="promo-card white-wine-card" style={{ backgroundImage: `url('https://ap-bodoni.myshopify.com/cdn/shop/files/white_wine_promo_bg.jpg?v=1638848302')` }}>
+                                <div className="promo-card white-wine-card">
                                     <div className="promo-card-content">
                                         <p className="promo-subtitle">Collection</p>
                                         <h3 className="promo-title">WHITE WINE</h3>
@@ -287,7 +294,7 @@ const Home = () => {
 
                             {/* Red Wine Card */}
                             <Col xs={12} md={6}>
-                                <div className="promo-card red-wine-card" style={{ backgroundImage: `url('https://ap-bodoni.myshopify.com/cdn/shop/files/red_wine_promo_bg.jpg?v=1638848302')` }}>
+                                <div className="promo-card red-wine-card">
                                     <div className="promo-card-content">
                                         <p className="promo-subtitle">Everyday</p>
                                         <h3 className="promo-title">RED WINE</h3>
@@ -298,7 +305,7 @@ const Home = () => {
                                 </div>
                             </Col>
                         </Row>
-                    </Container>
+                    </div>
                 </div>
             </Container>
             <div className="blog-section py-5">
