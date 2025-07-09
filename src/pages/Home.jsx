@@ -1,6 +1,5 @@
 import { Button, Card, Carousel, Col, Container, Navbar, Row } from "react-bootstrap";
 
-import "../assets/style/Home.css"
 import { FaArrowRight, FaBoxOpen, FaGift, FaTruck, FaWineGlassAlt, FaRegHeart, FaRegEye, FaShoppingBag, FaExpandArrowsAlt } from "react-icons/fa";
 import { useState } from "react";
 import OurTopPicks from "../components/OurTopPicks";
@@ -10,6 +9,7 @@ import MailingListSection from "../components/MailingListSection";
 import ClientLogoSlider from "../components/ClientLogoSlider";
 import Footer from "../components/layout/Footer";
 import HeroSlider from "../components/HeroSlider";
+import "../assets/style/Home.css"
 
 const Home = () => {
 

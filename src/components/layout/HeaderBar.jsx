@@ -2,6 +2,7 @@ import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 import logo from "../../assets/images/logo.png"
 import { useState } from "react";
+
 import "../../assets/style/Components.css"
 
 const HeaderBar = () => {
@@ -35,11 +36,11 @@ const HeaderBar = () => {
                     )}
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto text-uppercase fw-semibold">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#bar">Bar</Nav.Link>
-                            <Nav.Link href="#lounge">Lounge</Nav.Link>
-                            <Nav.Link href="#about">About Us</Nav.Link>
-                            <Nav.Link href="#contact">Contact Us</Nav.Link>
+                            <Nav.Link to="/">Home</Nav.Link>
+                            <Nav.Link to="/bar">Bar</Nav.Link>
+                            <Nav.Link to="/lounge">Lounge</Nav.Link>
+                            <Nav.Link to="/about">About Us</Nav.Link>
+                            <Nav.Link to="/contact">Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     {/* Right: Profile & Cart */}
