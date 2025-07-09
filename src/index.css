@@ -11,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -93,4 +93,35 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+.about_page .border-primary {
+  border-color: #0161b7 !important;
+}
+.about_page .text-primary {
+  color: #0161b7 !important;
+}
+.section_spacing {
+  padding-top: 100px;
+}
+.main_breadcrumb {
+  color: #000000;
+  padding: 40px 0;
+  margin: 0;
+  background: #ecf5fe;
+}
+.breadcrumb {
+  justify-content: center;
+  margin-bottom: 0 !important;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #9a9a9a;
+}
+.breadcrumb .breadcrumb-item a svg {
+  margin-right: 10px;
+  vertical-align: -2px;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #1a1a1a;
 }
