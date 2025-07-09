@@ -1,126 +1,162 @@
- 
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+ :root {
+   font-family: "Jost", sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
 
-:root {
-  font-family: "Jost", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+   color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #fff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-family: "Faculty Glyphic", sans-serif;
+   margin: 0;
+ }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Faculty Glyphic", sans-serif;
-  margin: 0;
-}
+ img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+ a {
+   font-weight: 500;
+   color: #007cc4;
+   text-decoration: inherit;
+ }
 
-a {
-  font-weight: 500;
-  color: #007cc4;
-  text-decoration: inherit;
-}
-.btn-primary{
+ .btn-primary {
    background-color: #007cc4;
-}
+ }
 
-a:hover {
-  color: #007cc4;
-}
+ a:hover {
+   color: #007cc4;
+ }
 
-body {
-  font-family: "Jost", sans-serif;
-  /* --- for small text */
-  /* font-family: "Faculty Glyphic", sans-serif; ---  Title text */
-  /* font-family: "Tangerine", cursive;   -- Writing text */
-}
+ body {
+   font-family: "Jost", sans-serif;
+   /* --- for small text */
+   /* font-family: "Faculty Glyphic", sans-serif; ---  Title text */
+   /* font-family: "Tangerine", cursive;   -- Writing text */
+ }
 
 
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+ h1 {
+   font-size: 3.2em;
+   line-height: 1.1;
+ }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
+ button {
+   border-radius: 8px;
+   border: 1px solid transparent;
+   padding: 0.6em 1.2em;
+   font-size: 1em;
+   font-weight: 500;
+   font-family: inherit;
+   background-color: #1a1a1a;
+   cursor: pointer;
+   transition: border-color 0.25s;
+ }
 
-.btn {
-  border-radius: 0;
-  color: #fff;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 11px;
-  position: relative;
-  transition: all .3s;
-  padding: 20px 30px;
-}
+ .btn {
+   border-radius: 0;
+   color: #fff;
+   border: 1px solid transparent;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-size: 11px;
+   position: relative;
+   transition: all .3s;
+   padding: 20px 30px;
+ }
 
-button:hover {
-  border-color: #646cff;
-}
+ button:hover {
+   border-color: #646cff;
+ }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+ button:focus,
+ button:focus-visible {
+   outline: 4px auto -webkit-focus-ring-color;
+ }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+ @media (prefers-color-scheme: light) {
+   :root {
+     color: #213547;
+     background-color: #ffffff;
+   }
+
+   a:hover {
+     color: #747bff;
+   }
+
+   button {
+     background-color: #f9f9f9;
+   }
+ }
+
+
+ @media (min-width: 1400px) {
+
+   .container,
+   .container-lg,
+   .container-md,
+   .container-sm,
+   .container-xl,
+   .container-xxl {
+     max-width: 1400px;
+   }
+
+   .about_page .border-primary {
+     border-color: #0161b7 !important;
+   }
+
+   .about_page .text-primary {
+     color: #0161b7 !important;
+   }
+
+   .section_spacing {
+     padding-top: 100px;
+   }
+
+   .main_breadcrumb {
+     color: #000000;
+     padding: 40px 0;
+     margin: 0;
+     background: #ecf5fe;
+   }
+
+   .breadcrumb {
+     justify-content: center;
+     margin-bottom: 0 !important;
+   }
+
+   .breadcrumb .breadcrumb-item a {
+     color: #9a9a9a;
+   }
+
+   .breadcrumb .breadcrumb-item a svg {
+     margin-right: 10px;
+     vertical-align: -2px;
+   }
+
+   .breadcrumb .breadcrumb-item.active {
+     color: #1a1a1a;
+   }
   }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
-@media (min-width: 1400px) {
-
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1400px;
-  }
-}

@@ -1,0 +1,18 @@
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact_details a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+.contact_details a svg {
+    vertical-align: -3px;
+}
+.contact_form .btn {
+    background-color: #0161b7;
+    border: none;
+}
