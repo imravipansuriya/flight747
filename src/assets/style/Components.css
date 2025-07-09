@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+a.navbar-brand {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+a.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header .navbar-collapse a.nav-link {
+    padding: 15px 20px;
+    font-size: 13px;
+    font-family: "Faculty Glyphic", sans-serif;
+}
