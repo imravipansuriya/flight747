@@ -1,11 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { Facebook, Twitter, Music } from "react-feather";
+import { Container, Row, Col, Card } from "react-bootstrap"; 
 import Meet_first from "../assets/images/hero-banner-1.png"
 import Meet_two from "../assets/images/hero-banner-2.png"
 import Meet_three from "../assets/images/hero-banner-3.png"
 import Meet_four from "../assets/images/hero-banner-4.png"
 import "../about.css"
+import { FaFacebook } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { BiMusic } from "react-icons/bi";
 
 const people = [
   {
@@ -50,13 +52,13 @@ const MeetPeople = () => {
                 </p>
                 <div className="d-flex justify-content-center gap-4 mb-3">
                   <div className="social_icon">
-                    <Facebook size={20} />
+                    <FaFacebook size={20} />
                   </div>
                   <div className="social_icon">
-                    <Twitter size={20} />
+                    <BsTwitter size={20} />
                   </div>
                   <div className="social_icon">
-                    <Music size={20} />
+                    <BiMusic size={20} />
                   </div>
                 </div>
                 <p className="mb-0">{person.desc}</p>

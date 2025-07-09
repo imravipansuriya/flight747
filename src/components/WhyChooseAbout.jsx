@@ -1,21 +1,23 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { CreditCard, MessageCircle, Send } from "react-feather";
+import { Container, Row, Col, Card } from "react-bootstrap"; 
+import { BiSend } from "react-icons/bi";
+import { BsCreditCard } from "react-icons/bs";
+import { FiMessageCircle } from "react-icons/fi";
 
 const WhyChooseUs = () => {
   const features = [
     {
-      icon: <Send size={40} />,
+      icon: <BiSend size={40} />,
       title: "Secure payments",
       text: "See below for information about the delivery & returns options in your country.",
     },
     {
-      icon: <CreditCard size={40} />,
+      icon: <BsCreditCard size={40} />,
       title: "Secure payments",
       text: "See below for information about the delivery & returns options in your country.",
     },
     {
-      icon: <MessageCircle size={40} />,
+      icon: <FiMessageCircle size={40} />,
       title: "Secure payments",
       text: "See below for information about the delivery & returns options in your country.",
     },

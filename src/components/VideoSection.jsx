@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import { Play } from "react-feather";
+import { Button, Modal } from "react-bootstrap"; 
+import { BiPlay } from "react-icons/bi";
 
 const VideoSection = () => {
   const [show, setShow] = useState(false);
@@ -17,7 +17,7 @@ const VideoSection = () => {
             
           }}
         >
-          <Play color="#fff" size={28} />
+          <BiPlay color="#fff" size={28} />
         </div>
       </div>
 

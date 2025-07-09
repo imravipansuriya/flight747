@@ -1,13 +1,14 @@
 import React from 'react'
 import Breadcrumbs from '../components/Breadcrumb'
 // import { Container, Row, Col } from "react-bootstrap";
-import { Container, Row, Col, Form, Button, Card, Image } from "react-bootstrap";
-import { MapPin, Phone, Mail, Globe } from "react-feather";
+import { Container, Row, Col, Form, Button, Card, Image } from "react-bootstrap"; 
 import { Link } from 'react-router-dom';
 import "../contact.css"
 import staff_first from "../assets/images/hero-banner-1.png"
 import staff_second from "../assets/images/hero-banner-2.png"
 import staff_third from "../assets/images/hero-banner-3.png"
+import { BiMapPin, BiPhone } from 'react-icons/bi';
+import { BsGlobe, BsMailbox } from 'react-icons/bs';
 
 const Contact = () => {
   const staff = [
@@ -48,10 +49,10 @@ const Contact = () => {
 
             <h4 className="fw-bold mt-4 mb-3">Head Office</h4>
             <div className="contact_details">
-              <Link to='https://maps.app.goo.gl/RYEa4DJivtQfnZsEA' target='_blank'><MapPin size={16} className="me-2" />1500 Airport Rd, Jacksonville, FL 32218, United States</Link>
-              <a href='tel:19047414331'><Phone size={16} className="me-2" />+19047414331</a>
-              <Link to='#'><Mail size={16} className="me-2" />demo@demo.com</Link>
-              <Link to='#'><Globe size={16} className="me-2" />www.example.com</Link>
+              <Link to='https://maps.app.goo.gl/RYEa4DJivtQfnZsEA' target='_blank'><BiMapPin size={16} className="me-2" />1500 Airport Rd, Jacksonville, FL 32218, United States</Link>
+              <a href='tel:19047414331'><BiPhone size={16} className="me-2" />+19047414331</a>
+              <Link to='#'><BsMailbox size={16} className="me-2" />demo@demo.com</Link>
+              <Link to='#'><BsGlobe size={16} className="me-2" />www.example.com</Link>
             </div>
           </Col>
 
