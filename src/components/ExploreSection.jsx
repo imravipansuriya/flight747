@@ -1,5 +1,6 @@
 
 import { Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ExploreSection = () => {
   return (
@@ -11,9 +12,11 @@ const ExploreSection = () => {
       <p className="lead mb-4" style={{ maxWidth: "700px" }}>
         Flight 747 is more than a place to grab a drink—it’s where freedom meets flavor. From the buzz of the bar to the calm of the lounge, you’re always welcome to relax, recharge, and enjoy the ride.
       </p>
-      <Button size="lg">
-        Explore products
-      </Button>
+      <Link to="/product">
+              <Button size="lg">
+              Explore products
+            </Button>
+            </Link>
     </Container>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa'; // For the arrow icon
 import '../assets/style/Home.css'; // Create this CSS file for styling
+import { Link } from 'react-router-dom';
 
 const MailingListSection = () => {
   return (
@@ -24,9 +25,11 @@ const MailingListSection = () => {
           will receive updates from Flight 747 Jacksonville.
         </p>
 
-        <Button variant="outline-dark" className="subscribe-btn">
+        <Link to="/contact">
+          <Button variant="outline-dark" className="subscribe-btn">
           SUBSCRIBE <FaArrowRight className="ms-2" />
         </Button>
+        </Link>
       </Container>
     </div>
   );

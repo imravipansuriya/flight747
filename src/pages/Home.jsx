@@ -20,6 +20,7 @@ import blogImg2 from "../assets/images/blog_image2.jpg";
 import blogImg3 from "../assets/images/blog_image3.jpg";
 import "../assets/style/home.css";
 import AgeVerificationModal from "../components/AgeVerificationModal";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -206,9 +207,9 @@ const Home = () => {
                                     <div className="promo-card-content">
                                         <h3 className="promo-title">Sip Something Stronger at the Flight 747 Bar</h3>
                                         <p  className="promo-subtitle mt-3">From top-shelf pours to classic cocktails, our bar is fully stocked and always ready. Come for the drinks, stay for the atmosphere.</p>
-                                        <a href="/bar" className="shop-link">
+                                        <Link to="/product" className="shop-link">
                                             GO TO SHOP <FaArrowRight className="ms-2" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </Col>
@@ -220,9 +221,9 @@ const Home = () => {
                                         < h3 className="promo-title">Your Go-To Liquor Store, Every Day</h3>
                                         <p className="promo-subtitle mt-3">Premium spirits, chilled beers, fine wines, and everything in between—all under one roof. Stock up anytime, no nonsense.
                                         </p>
-                                        <a href="/shop" className="shop-link">
+                                        <Link to="/product" className="shop-link">
                                             Shop Now  <FaArrowRight className="ms-2" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </Col>
@@ -261,9 +262,9 @@ const Home = () => {
                                         <Card.Text className="blog-post-description">
                                             {post.description}
                                         </Card.Text>
-                                        <a href="#" className="read-more-link">
+                                        <Link to="/about" className="read-more-link">
                                             READ MORE <i className="fa fa-arrow-right"></i> {/* Using a generic right arrow for now, or use react-icons if preferred */}
-                                        </a>
+                                        </Link>
                                     </Card.Body>
                                 </Card>
                             </Col>

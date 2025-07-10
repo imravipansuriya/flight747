@@ -1,5 +1,6 @@
 
 import { Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ExploreSectionLounge = () => {
   return (
@@ -11,9 +12,11 @@ const ExploreSectionLounge = () => {
       <p className="lead mb-4" style={{ maxWidth: "700px" }}>
         Our bar isn’t just a place to drink—it’s a place to connect, unwind, and feel at home. Whether you're here every week or it’s your first time, the experience is always real.
       </p>
-      <Button size="lg">
+      <Link to="/product">
+        <Button size="lg">
         Explore products
       </Button>
+      </Link>
     </Container>
   );
 };

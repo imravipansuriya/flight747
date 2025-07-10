@@ -1,5 +1,6 @@
 
 import { Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ExploreSectionLiqueur = () => {
   return (
@@ -11,9 +12,11 @@ const ExploreSectionLiqueur = () => {
       <p className="lead mb-4" style={{ maxWidth: "700px" }}>
         Whatever the occasion, we’ve got what you need. Shop our full selection online and get it ready for pickup.
       </p>
-      <Button size="lg">
+      <Link to="/product">
+        <Button size="lg">
         Browse & Shop Now
       </Button>
+      </Link>
     </Container>
   );
 };

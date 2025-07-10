@@ -22,7 +22,6 @@ const Liqueur = () => {
       {/* <Container fluid="xxl" className='section_spacing'>
           <HeroSliderLiqueur />
       </Container> */}
-      <MeetPeopleLiqueur />
       <div className="social-gallery section_spacing">
           <Container>
               <div className="text-center mb-4">
@@ -99,6 +98,7 @@ const Liqueur = () => {
               </div>
           </Container>
       </div>
+      <MeetPeopleLiqueur />
       <Container className="section_spacing about_page">
           <Row className="align-items-center">
               <Col md={6}>
