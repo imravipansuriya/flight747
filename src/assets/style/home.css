@@ -388,8 +388,9 @@
 
 .product-image {
     max-width: 80%;
-    height: auto;
+    height: 300px;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
 .sold-out-overlay {
@@ -460,7 +461,7 @@
 }
 
 .product-name {
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: normal;
     color: #333;
     min-height: 2.5em;
@@ -468,6 +469,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+    line-height: 1.8;
 }
 
 .product-price {
@@ -831,7 +833,7 @@
 .footer-heading {
     font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1233,18 +1235,39 @@
 }
 
 
-@media (max-width: 1199.98px) {
-  
-}
+@media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {
+    .promo-card {
+        padding: 20px;
+    }
+
+    .hero-banner-section {
+        padding: 20px;
+    }
+
+    .hero-banner-section .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-banner-section .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-content .btn {
+        padding: 15px 15px;
+    }
+
+    .feature-title {
+        line-height: 1.5;
+    }
 
     .blog-title {
         font-size: 2.2em;
     }
 
     .blog-image-wrapper {
-        height: 200px;
+        height: 300px;
     }
 
     .category-card {
@@ -1308,6 +1331,14 @@
         text-align: center;
         padding: 20px 0;
     }
+
+    .HeroSlider .carousel-item .carousel-caption span {
+        font-size: 40px;
+    }
+
+    a.navbar-brand {
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1316,8 +1347,12 @@
         padding: 60px 0;
     }
 
+    .HeroSlider .carousel-item .carousel-caption h3 {
+        font-size: 38px;
+    }
+
     .mailing-list-title {
-        font-size: 2em;
+        font-size: 1.4em;
         margin-bottom: 30px;
     }
 
@@ -1360,7 +1395,7 @@
     }
 
     .footer-col {
-        margin-bottom: 30px;
+        margin-bottom: 0;
         text-align: center;
         align-items: center;
     }
@@ -1395,7 +1430,7 @@
     }
 
     .blog-image-wrapper {
-        height: 180px;
+        height: 300px;
     }
 
     .blog-post-title {
@@ -1468,6 +1503,6 @@
     }
 
     .blog-image-wrapper {
-        height: 200px;
+        height: 300px;
     }
 }

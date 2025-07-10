@@ -19,7 +19,7 @@ const HeaderBar = () => {
         <div>
             <Navbar expand="lg" className="header py-3 bg-white">
                 <Container fluid className="px-4">
-                    <Navbar.Brand href="/home" className="mx-auto d-flex justify-content-center">
+                    <Navbar.Brand href="/home" className="mx-lg-auto d-flex justify-content-center">
                         <img src={logo} alt="Logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
