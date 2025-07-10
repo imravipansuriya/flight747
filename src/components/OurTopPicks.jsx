@@ -82,8 +82,8 @@ const OurTopPicks = () => {
         <p className="shop-text">SHOP</p>
         <h2 className="section-title">Our Top Picks</h2>
         <p className="section-description mb-5">
-          Join our family of wine lovers and be the first to taste <br />
-          our new releases and attend special events.
+         Discover our handpicked selection of wines, spirits, and more. Be the first to try new arrivals, limited releases, and special drops—only at Flight 747 Jacksonville.
+
         </p>
 
         <Tab.Container activeKey={key} onSelect={(k) => setKey(k)}>

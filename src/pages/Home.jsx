@@ -19,6 +19,7 @@ import blogImg1 from "../assets/images/blog_image1.jpg";
 import blogImg2 from "../assets/images/blog_image2.jpg";
 import blogImg3 from "../assets/images/blog_image3.jpg";
 import "../assets/style/Home.css";
+import AgeVerificationModal from "../components/AgeVerificationModal";
 
 const Home = () => {
 
@@ -104,6 +105,7 @@ const Home = () => {
 
     return (
         <div>
+            <AgeVerificationModal legalAge={21} redirectUrl="https://g.co/kgs/ETBrJxx" />
             <Container fluid="xxl">
                 <HeroSlider />
             </Container>
@@ -111,49 +113,56 @@ const Home = () => {
                 <div className="feature-section-container">
                     <Container>
                         <Row className="justify-content-center text-center">
-                            <Col xs={12} sm={12} md={6} lg={3}>
+                            <Col xs={12} sm={12} md={6} lg={4}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <CiGift size={40} className="feature-icon" />
                                     </div>
                                     <div className="img-text">
-                                        <h5 className="feature-title">UP TO 40% DISCOUNT</h5>
-                                        <p className="feature-description">On all your wine orders</p>
+                                        <h5 className="feature-title">FULL BAR & LOUNGE EXPERIENCE
+                                        </h5>
+                                        <p className="feature-description">Crafted cocktails, cold beer, good vibes—relax in our upgraded bar and lounge space.
+                                        </p>
                                     </div>
                                 </div>
                             </Col>
 
-                            <Col xs={12} sm={12} md={6} lg={3}>
+                            <Col xs={12} sm={12} md={6} lg={4}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <BsBox2Heart size={30} className="feature-icon" />
                                     </div>
                                     <div className="img-text">
-                                        <h5 className="feature-title">CUSTOM PACKAGES</h5>
-                                        <p className="feature-description">Making your gift box by yourself</p>
+                                        <h5 className="feature-title">LIQUOR STORE WITH EXCLUSIVE SELECTIONS
+                                        </h5>
+                                        <p className="feature-description">From everyday essentials to rare finds—we stock it all, right here at your go-to local landmark.
+                                        </p>
                                     </div>
                                 </div>
                             </Col>
 
-                            <Col xs={12} sm={12} md={6} lg={3}>
+                            <Col xs={12} sm={12} md={6} lg={4}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <PiWineDuotone size={30} className="feature-icon" />
                                     </div>
                                     <div className="img-text">
-                                        <h5 className="feature-title">EASY & SECURE SHOPPING</h5>
-                                        <p className="feature-description">No risk online shopping</p>
+                                        <h5 className="feature-title">IN-STORE PICKUP JUST MINUTES FROM JAX
+                                        </h5>
+                                        <p className="feature-description">Order ahead, swing by, and grab your favorites—fast, easy, and airport-close.
+                                        </p>
                                     </div>
                                 </div>
                             </Col>
 
-                            <Col xs={12} sm={12} md={6} lg={3}>
+                            <Col xs={12} sm={12} md={6} lg={4} className="mt-4">
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <LiaShippingFastSolid size={30} className="feature-icon" />
                                     </div>
                                     <div className="img-text">
-                                        <h5 className="feature-title">FREE SHIPPING & PAYMENT</h5>
+                                        <h5 className="feature-title">CUSTOM GIFT PACKS & PARTY BOXES
+                                        </h5>
                                         <p className="feature-description">An order from $500</p>
                                     </div>
                                 </div>
@@ -222,26 +231,29 @@ const Home = () => {
                     </Container>
                 </div>
             </Container>
-             
-                <OurTopPicks />
-             
+
+            <OurTopPicks />
+
             {/* <Container className="category-container">
                 <CategoryHome />
             </Container> */}
             <Container className="section_spacing">
                 <div className="discover-section-wrapper">
-                    {/* Top Hero/Banner Section */}
                     <div className="hero-banner-section">
-                        <Container className="h-100 d-flex align-items-center justify-content-center text-center">
+                        <div className="h-100 d-flex align-items-center justify-content-center text-center">
                             <div className="hero-content">
                                 <p className="hero-subtitle">Discover</p>
-                                <h1 className="hero-title">TASTING & PAIRING</h1>
-                                <p className="hero-date">SAT, SEPTEMBER 2022</p>
-                                <Button variant="outline-light" className="taste-now-btn">
-                                    TASTE NOW <FaArrowRight className="ms-2" />
+                                <h1 className="hero-title"> The Lounge at Flight 747</h1>
+                                <p className="hero-date mt-3">Kick back with signature cocktails, 
+                                curated tasting nights, <br />   and live music in a space built for 
+                                good times and great company. Whether you're local or  <br />
+                                just landed, our lounge is where Jacksonville unwinds. <br />
+                                </p>
+                                <Button variant="outline-light" className="taste-now-btn" href="/lounge">
+                                    Explore the Lounge  <FaArrowRight className="ms-2" />
                                 </Button>
                             </div>
-                        </Container>
+                        </div>
                     </div>
 
                     {/* Two Promotional Cards Section */}
@@ -251,9 +263,9 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="promo-card white-wine-card">
                                     <div className="promo-card-content">
-                                        <p className="promo-subtitle">Collection</p>
-                                        <h3 className="promo-title">WHITE WINE</h3>
-                                        <a href="#" className="shop-link">
+                                        <p className="promo-subtitle">Sip Something Stronger at the Flight 747 Bar</p>
+                                        <h3 className="promo-title">From top-shelf pours to classic cocktails, our bar is fully stocked and always ready. Come for the drinks, stay for the atmosphere.</h3>
+                                        <a href="/bar" className="shop-link">
                                             GO TO SHOP <FaArrowRight className="ms-2" />
                                         </a>
                                     </div>
@@ -264,10 +276,11 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="promo-card red-wine-card">
                                     <div className="promo-card-content">
-                                        <p className="promo-subtitle">Everyday</p>
-                                        <h3 className="promo-title">RED WINE</h3>
-                                        <a href="#" className="shop-link">
-                                            GO TO SHOP <FaArrowRight className="ms-2" />
+                                        <p className="promo-subtitle">Your Go-To Liquor Store, Every Day</p>
+                                        <h3 className="promo-title">Premium spirits, chilled beers, fine wines, and everything in between—all under one roof. Stock up anytime, no nonsense.
+</h3>
+                                        <a href="/shop" className="shop-link">
+                                           Visit the Bar  <FaArrowRight className="ms-2" />
                                         </a>
                                     </div>
                                 </div>
@@ -276,6 +289,7 @@ const Home = () => {
                     </div>
                 </div>
             </Container>
+
 
             <div className="blog-section ">
                 <Container className="text-center">
@@ -316,9 +330,9 @@ const Home = () => {
                     </Row>
                 </Container>
             </div>
-            <Container>
-                <MailingListSection />
-            </Container>
+
+            <MailingListSection />
+
             <Container>
                 <ClientLogoSlider />
             </Container>

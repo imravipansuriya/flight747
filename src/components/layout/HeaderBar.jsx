@@ -1,4 +1,4 @@
-import { Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
+import { Button, Col, Container, Nav, Navbar, NavDropdown, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 import logo from "../../assets/images/logo.png"
 import { useState } from "react";
@@ -13,18 +13,18 @@ const HeaderBar = () => {
         setSearchBarOpen(!searchBarOpen);
     };
 
+ 
+
     return (
         <div>
             <Navbar expand="lg" className="header py-3 bg-white">
                 <Container fluid className="px-4">
-                    {/* Center: Logo */}
-                    <Navbar.Brand href="#home" className="mx-auto d-flex justify-content-center">
+                    <Navbar.Brand href="/home" className="mx-auto d-flex justify-content-center">
                         <img src={logo} alt="Logo" />
                     </Navbar.Brand>
-                    {/* Mobile Toggle */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 </Container>
-                {/* Nav Links */}
+
                 <Container>
                     {/* Left: Search Icon */}
                     <div className="d-flex align-items-center">
@@ -49,7 +49,12 @@ const HeaderBar = () => {
                     <div className="d-flex align-items-center gap-3 d-none d-lg-flex">
                         <FiUser size={20} />
                         <div className="position-relative">
-                            <FiShoppingBag size={20} />
+
+                            <OverlayTrigger placement="bottom" overlay={<Tooltip id={`tooltip-cart`}>Coming soon</Tooltip>} >
+                                <Button className="btn-cart">
+                                    <FiShoppingBag size={20} />
+                                </Button>
+                            </OverlayTrigger>
                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 1
                             </span>
@@ -57,7 +62,7 @@ const HeaderBar = () => {
                     </div>
                 </Container>
             </Navbar>
-        </div>
+        </div >
     );
 };
 

@@ -85,13 +85,13 @@ const Product = () => {
         <>
             <Breadcrumbs />
 
-            <div style={{ backgroundColor: '#ffffff' }}>
+            <div >
                 <Container>
                     <h2 className="premium_wines">Our Top Picks</h2>
                     <Row>
                         {products.map((product) => (
                             <Col key={product.id} xs={12} sm={6} md={3} className="mb-4">
-                                <Card className="h-100 shadow-sm product_data">
+                                <Card className="h-100 product_data">
                                     <div style={{ position: 'relative' }} className="product_image">
                                         <Card.Img variant="top" src={product.image} />
                                     </div>
