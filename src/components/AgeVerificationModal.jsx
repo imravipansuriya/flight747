@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import '../assets/style/Home.css'; // Create this CSS file for styling
+import '../assets/style/home.css'; // Create this CSS file for styling
 
 const AgeVerificationModal = ({ legalAge = 21, redirectUrl = 'https://www.google.com' }) => {
     const [showModal, setShowModal] = useState(false);
