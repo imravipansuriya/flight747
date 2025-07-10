@@ -138,7 +138,7 @@ const OurTopPicks = () => {
   );
 
   return (
-    <div className="top-picks-section py-5">
+    <div className="top-picks-section">
       <Container className="text-center">
         <p className="shop-text">SHOP</p>
         <h2 className="section-title">Our Top Picks</h2>

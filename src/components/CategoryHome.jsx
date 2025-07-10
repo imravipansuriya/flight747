@@ -9,7 +9,7 @@ import CardImage5 from '../assets/images/card-5.jpg';
 
 const CategoryHome = () => {
     return (
-        <div className="category-grid-section py-5">
+        <div className="category-grid-section">
             <Container>
                 <Row className="justify-content-center">
                     <Col xs={12} sm={6} lg={6}>

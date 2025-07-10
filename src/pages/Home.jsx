@@ -16,42 +16,11 @@ import { GiWineGlass } from "react-icons/gi";
 import { BsBox2Heart } from "react-icons/bs";
 import { PiWineDuotone } from "react-icons/pi";
 import CategoryHome from "../components/CategoryHome";
+import blogImg1 from "../assets/images/blog_image1.jpg";
+import blogImg2 from "../assets/images/blog_image2.jpg";
+import blogImg3 from "../assets/images/blog_image3.jpg";
 
 const Home = () => {
-
-    const categories = [
-        {
-            title: 'WINES',
-            image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
-            shopLink: '#',
-            bgColor: '#F8F5F0', // Approximate background color from screenshot
-        },
-        {
-            title: 'GIFTS',
-            image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
-            shopLink: '#',
-            bgColor: '#F3F8FB', // Approximate background color from screenshot
-        },
-        {
-            title: 'SPECIALS',
-            image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
-            shopLink: '#',
-            bgColor: '#FDFCF7', // Approximate background color from screenshot
-        },
-        {
-            title: 'ROSES',
-            image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
-            shopLink: '#',
-            bgColor: '#F7FCF6', // Approximate background color from screenshot
-        },
-        {
-            title: 'UNDER $14',
-            image: "https://i.ibb.co/Lz4TF55Z/vintage.png",
-            shopLink: '#',
-            bgColor: '#F3F8FB', // Approximate background color from screenshot
-        },
-        // Add more categories if needed, the grid will adjust
-    ];
 
     const products = [
         {
@@ -105,7 +74,7 @@ const Home = () => {
     const blogPosts = [
         {
             id: 1,
-            image: 'https://ap-bodoni.myshopify.com/cdn/shop/articles/blog_image1.jpg?v=1638848302', // Placeholder: Replace with actual image URL
+            image: blogImg1,
             date: { day: '10', month: 'AUG' },
             author: 'Demo Demo',
             category: 'Category',
@@ -114,7 +83,7 @@ const Home = () => {
         },
         {
             id: 2,
-            image: 'https://ap-bodoni.myshopify.com/cdn/shop/articles/blog_image2.jpg?v=1638848302', // Placeholder: Replace with actual image URL
+            image: blogImg2,
             date: { day: '10', month: 'AUG' },
             author: 'Demo Demo',
             category: 'Category',
@@ -123,7 +92,7 @@ const Home = () => {
         },
         {
             id: 3,
-            image: 'https://ap-bodoni.myshopify.com/cdn/shop/articles/blog_image3.jpg?v=1638848302', // Placeholder: Replace with actual image URL
+            image: blogImg3,
             date: { day: '10', month: 'AUG' },
             author: 'Demo Demo',
             category: 'Category',
@@ -193,9 +162,6 @@ const Home = () => {
                     </Container>
                 </div>
             </Container>
-            <Container className="category-container">
-                <CategoryHome />
-            </Container>
             <Container>
                 <div className="product-slider-section">
                     <Container className="text-center">
@@ -259,6 +225,9 @@ const Home = () => {
             <Container>
                 <OurTopPicks />
             </Container>
+            <Container className="category-container">
+                <CategoryHome />
+            </Container>
             <Container>
                 <div className="discover-section-wrapper">
                     {/* Top Hero/Banner Section */}
@@ -307,6 +276,7 @@ const Home = () => {
                     </div>
                 </div>
             </Container>
+
             <div className="blog-section py-5">
                 <Container className="text-center">
                     <p className="blog-subtitle">THE LATEST</p>
