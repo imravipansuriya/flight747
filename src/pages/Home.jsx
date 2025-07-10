@@ -171,66 +171,7 @@ const Home = () => {
                     </Container>
                 </div>
             </Container>
-            <Container>
-                <div className="product-slider-section">
-                    <Container className="text-center">
-                        <p className="shop-text">SHOP</p>
-                        <h2 className="section-title">Premium Wines</h2>
-                        <p className="section-description">
-                            Join our family of wine lovers and be the first to taste <br />
-                            our new releases and attend special events.
-                        </p>
-                        <Swiper
-                            spaceBetween={30}
-                            slidesPerView={1}
-                            centeredSlides={false}
-                            loop={true}
-                            pagination={true}
-                            navigation={true}
-                            className="mySwiper product-swiper"
-                            breakpoints={{
-                                576: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 20,
-                                },
-                                768: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 30,
-                                },
-                                992: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 30,
-                                },
-                            }}>
-                            {products.map((product) => (
-                                <SwiperSlide key={product.id}>
-                                    <Card className={`product-card ${product.soldOut ? 'sold-out-card' : ''}`}>
-                                        <div className="product-image-container">
-                                            <Card.Img variant="top" src={product.image} alt={product.name} className="product-image" />
-                                            {product.soldOut && <div className="sold-out-overlay">Sold out</div>}
-                                            {/* Product Hover Icons (from previous request) */}
-                                            <div className="product-hover-icons">
-                                                <div className="icon-circle"><FaRegHeart /></div>
-                                                <div className="icon-circle"><FaRegEye /></div>
-                                                <div className="icon-circle"><FaShoppingBag /></div>
-                                                <div className="icon-circle"><FaExpandArrowsAlt /></div>
-                                            </div>
-                                        </div>
-                                        <Card.Body>
-                                            {product.type && <p className="product-type-tag">{product.type}</p>}
-                                            <Card.Title className="product-name">{product.name}</Card.Title>
-                                            <Card.Text className="product-price">
-                                                {product.oldPrice && <span className="old-price">{product.oldPrice}</span>}
-                                                {product.price}
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </Container>
-                </div>
-            </Container>
+            
 
             <OurTopPicks />
 
@@ -244,10 +185,10 @@ const Home = () => {
                             <div className="hero-content">
                                 <p className="hero-subtitle">Discover</p>
                                 <h1 className="hero-title"> The Lounge at Flight 747</h1>
-                                <p className="hero-date mt-3">Kick back with signature cocktails, 
-                                curated tasting nights, <br />   and live music in a space built for 
-                                good times and great company. Whether you're local or  <br />
-                                just landed, our lounge is where Jacksonville unwinds. <br />
+                                <p className="hero-date mt-3">Kick back with signature cocktails,
+                                    curated tasting nights, <br />   and live music in a space built for
+                                    good times and great company. Whether you're local or  <br />
+                                    just landed, our lounge is where Jacksonville unwinds. <br />
                                 </p>
                                 <Button variant="outline-light" className="taste-now-btn" href="/lounge">
                                     Explore the Lounge  <FaArrowRight className="ms-2" />
@@ -263,8 +204,8 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="promo-card white-wine-card">
                                     <div className="promo-card-content">
-                                        <p className="promo-subtitle">Sip Something Stronger at the Flight 747 Bar</p>
-                                        <h3 className="promo-title">From top-shelf pours to classic cocktails, our bar is fully stocked and always ready. Come for the drinks, stay for the atmosphere.</h3>
+                                        <h3 className="promo-title">Sip Something Stronger at the Flight 747 Bar</h3>
+                                        <p  className="promo-subtitle mt-3">From top-shelf pours to classic cocktails, our bar is fully stocked and always ready. Come for the drinks, stay for the atmosphere.</p>
                                         <a href="/bar" className="shop-link">
                                             GO TO SHOP <FaArrowRight className="ms-2" />
                                         </a>
@@ -276,11 +217,11 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="promo-card red-wine-card">
                                     <div className="promo-card-content">
-                                        <p className="promo-subtitle">Your Go-To Liquor Store, Every Day</p>
-                                        <h3 className="promo-title">Premium spirits, chilled beers, fine wines, and everything in between—all under one roof. Stock up anytime, no nonsense.
-</h3>
+                                        < h3 className="promo-title">Your Go-To Liquor Store, Every Day</h3>
+                                        <p className="promo-subtitle mt-3">Premium spirits, chilled beers, fine wines, and everything in between—all under one roof. Stock up anytime, no nonsense.
+                                        </p>
                                         <a href="/shop" className="shop-link">
-                                           Visit the Bar  <FaArrowRight className="ms-2" />
+                                            Shop Now  <FaArrowRight className="ms-2" />
                                         </a>
                                     </div>
                                 </div>

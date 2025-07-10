@@ -27,7 +27,6 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/liqueur" element={<Liqueur />} />
         <Route path="/link-tree" element={<LinkTree />} />
-        <Route path="/bar" element={<Bar />} />
         <Route path="/shop/:id" element={<Shop />} />
       </Route>
     </Routes>

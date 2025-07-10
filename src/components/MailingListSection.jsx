@@ -7,8 +7,8 @@ const MailingListSection = () => {
   return (
     <div className="mailing-list-section">
       <Container className="text-center">
-        <p className="mailing-list-subtitle">STAY CONNECT</p>
-        <h2 className="mailing-list-title">Join Our Mailing List</h2>
+        <p className="mailing-list-subtitle">Stay Connected with Flight 747</p>
+        <h2 className="mailing-list-title">Be the first to hear about new arrivals, events, exclusive deals, and what’s happening at the bar and lounge.</h2>
 
         <div className="email-input-container">
           <Form.Control
@@ -20,8 +20,8 @@ const MailingListSection = () => {
         </div>
 
         <p className="mailing-list-privacy-text mb-4">
-          By signing up, you agree to the Privacy Policy and <br />
-          you will be receiving our newsletters.
+          By signing up, you agree to our Privacy Policy and <br />
+          will receive updates from Flight 747 Jacksonville.
         </p>
 
         <Button variant="outline-dark" className="subscribe-btn">

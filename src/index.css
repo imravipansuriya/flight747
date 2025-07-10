@@ -3,6 +3,11 @@
    margin: 0;
    padding: 0;
  }
+ body .uwy .uai *, body .uwy .ulsti {
+    background-color: #0161b7 !important;
+    border-radius: 100px;
+    overflow: hidden;
+}
 
  :root {
    font-family: "Jost", sans-serif;

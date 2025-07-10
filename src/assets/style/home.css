@@ -37,7 +37,7 @@
 }
 
 .HeroSlider .carousel-item .carousel-caption h3 {
-    font-size: 80px;
+    font-size: 50px;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
@@ -124,6 +124,10 @@
 .feature-item .img-icon {
     height: 50px;
     width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50px;
 }
 
 .feature-item .img-text {
@@ -217,7 +221,15 @@
     padding: 100px 0;
 }
 
-
+.productSection{
+    margin-top: 130px;
+}
+.productSection .product-image{
+    max-width: 80%; 
+    transition: transform 0.3s ease;
+    height: 280px;
+    object-fit: contain;
+}
 
 .shop-link {
     color: #fff;
@@ -481,7 +493,7 @@
 .product-swiper .swiper-button-prev {
     top: 50%;
     transform: translateY(-50%);
-}
+} 
 
 .product-swiper .swiper-button-prev {
     left: -10px;
@@ -795,7 +807,7 @@
 }
 
 .footer-logo img {
-    max-width: 150px;
+    max-width: 80px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -819,7 +831,7 @@
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 25px;
-    color: #007cc4;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -900,7 +912,7 @@
     bottom: 70px;
     right: 7px;
     background-color: #25d366;
-    color: #FFF;
+    color: #FFF !important;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -908,7 +920,7 @@
 }
 
 .float .my-float:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 
@@ -916,124 +928,141 @@
 
 /* Overall Modal Styling */
 .age-verification-modal .modal-content {
-  background-color: #F8F5F0; /* Light background similar to your website theme */
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  font-family: serif; /* Consistent with your site's typography */
-  color: #333;
+    background-color: #F8F5F0;
+    /* Light background similar to your website theme */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: serif;
+    /* Consistent with your site's typography */
+    color: #333;
 }
 
 /* Modal Header */
 .age-verification-modal .modal-header {
-  border-bottom: none; /* Remove default border */
-  padding-bottom: 0;
-  padding-top: 30px;
+    border-bottom: none;
+    /* Remove default border */
+    padding-bottom: 0;
+    padding-top: 30px;
 }
 
 .modal-headline {
-  font-size: 2em;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 0;
-  line-height: 1.2;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.2;
 }
 
 /* Modal Body */
 .age-verification-modal .modal-body-content {
-  padding-top: 15px;
-  padding-bottom: 25px;
-  font-size: 1.1em;
-  line-height: 1.6;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 .legal-age-highlight {
-  font-weight: bold;
-  color: #007cc4; /* Accent color */
+    font-weight: bold;
+    color: #007cc4;
+    /* Accent color */
 }
-.btn.btn-cart{
+
+.btn.btn-cart {
     background-color: transparent;
     padding: 0;
     color: currentcolor;
     border: none;
 }
-.btn.btn-cart{
-    
-}
+
+.btn.btn-cart {}
 
 /* Modal Footer (Buttons) */
 .age-verification-modal .modal-footer-buttons {
-  border-top: none; /* Remove default border */
-  padding-top: 0;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column; /* Stack buttons on small screens */
-  gap: 15px; /* Space between buttons */
+    border-top: none;
+    /* Remove default border */
+    padding-top: 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons on small screens */
+    gap: 15px;
+    /* Space between buttons */
 }
 
 .modal-btn {
-  width: 80%; /* Make buttons wider */
-  max-width: 250px; /* Max width for buttons */
-  padding: 12px 20px;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+    width: 80%;
+    /* Make buttons wider */
+    max-width: 250px;
+    /* Max width for buttons */
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .modal-btn.yes-btn {
-  background-color: #007cc4; /* Accent color for YES button */
-  border-color: #007cc4;
-  color: white;
+    background-color: #007cc4;
+    /* Accent color for YES button */
+    border-color: #007cc4;
+    color: white;
 }
 
 .modal-btn.yes-btn:hover {
-  background-color: #007cc4; /* Darker accent on hover */
-  border-color: #007cc4;
+    background-color: #007cc4;
+    /* Darker accent on hover */
+    border-color: #007cc4;
 }
 
 .modal-btn.no-btn {
-  background-color: transparent;
-  border-color: #ccc;
-  color: #666;
+    background-color: transparent;
+    border-color: #ccc;
+    color: #666;
 }
 
 .modal-btn.no-btn:hover {
-  background-color: #eee;
-  border-color: #bbb;
-  color: #333;
+    background-color: #eee;
+    border-color: #bbb;
+    color: #333;
 }
 
 /* Modal Backdrop */
 .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.7); /* Darker, more opaque backdrop */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker, more opaque backdrop */
 }
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
-  .age-verification-modal .modal-footer-buttons {
-    flex-direction: row; /* Buttons side-by-side on larger screens */
-    justify-content: center;
-    gap: 20px;
-  }
-  .modal-btn {
-    width: auto; /* Auto width on larger screens */
-  }
+    .age-verification-modal .modal-footer-buttons {
+        flex-direction: row;
+        /* Buttons side-by-side on larger screens */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .modal-btn {
+        width: auto;
+        /* Auto width on larger screens */
+    }
 }
 
 @media (max-width: 575.98px) {
-  .modal-headline {
-    font-size: 1.5em;
-  }
-  .age-verification-modal .modal-body-content {
-    font-size: 1em;
-  }
-  .modal-btn {
-    padding: 10px 15px;
-    font-size: 0.9em;
-  }
+    .modal-headline {
+        font-size: 1.5em;
+    }
+
+    .age-verification-modal .modal-body-content {
+        font-size: 1em;
+    }
+
+    .modal-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
 }
 
 

@@ -26,6 +26,7 @@ import {
   useGetProductListByIdQuery,
 } from "../store/api/user/productApiSlice";
 import { useParams } from "react-router-dom";
+import OurTopPicks from "../components/OurTopPicks";
 
 const Shop = () => {
   const [quantity, setQuantity] = useState(1);
@@ -96,6 +97,7 @@ const Shop = () => {
   return (
     <>
       <Breadcrumbs currentPage="Shop" />
+      
       <Container className="py-5 shop_page">
         <Row>
           <Col md={7} className="text-center mb-5 mb-md-0">

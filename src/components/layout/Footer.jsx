@@ -8,6 +8,7 @@ import {
   FaPinterestP,
   FaTumblr,
 } from 'react-icons/fa'; // Social media icons
+import logoFooter from '../../assets/images/footer-logo.png';
  
 
 const Footer = () => {
@@ -20,12 +21,11 @@ const Footer = () => {
             <Col xs={12} md={4} lg={3} className="footer-col footer-logo-col mb-4 mb-md-0">
               <div className="footer-logo">
                 <img
-                  src="https://ap-bodoni.myshopify.com/cdn/shop/files/bodoni-logo-footer.png?v=1638848302" // Placeholder: Replace with your actual logo URL
+                  src={logoFooter}
                   alt="Bodoni Vineyards Logo"
                   className="img-fluid"
                 />
-                <span className="logo-text">BODONI</span>
-                <span className="logo-subtext">VINEYARDS</span>
+                 
               </div>
             </Col>
 
@@ -33,12 +33,12 @@ const Footer = () => {
             <Col xs={12} md={4} lg={2} className="footer-col mb-4 mb-md-0">
               <h5 className="footer-heading">USEFUL LINK</h5>
               <ul className="footer-links list-unstyled">
-                <li><a href="#">FAQ Page</a></li>
-                <li><a href="#">Party Planning</a></li>
-                <li><a href="#">Store Locations</a></li>
-                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Liqueur</a></li>
+                <li><a href="#">Lounge</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Events</a></li>
               </ul>
             </Col>
 
@@ -57,7 +57,7 @@ const Footer = () => {
             <Col xs={12} md={8} lg={5} className="footer-col"> {/* Adjusted md size for better distribution */}
               <h5 className="footer-heading">FOLLOW US</h5>
               <div className="social-icons mb-4">
-                <a href="#" aria-label="Facebook"><FaFacebookF /></a>
+                <a href="https://www.facebook.com/profile.php?id=61576995843875" aria-label="Facebook"><FaFacebookF /></a>
                 <a href="#" aria-label="Instagram"><FaInstagram /></a>
                 <a href="#" aria-label="Twitter"><FaTwitter /></a>
                 <a href="#" aria-label="Youtube"><FaYoutube /></a>
@@ -67,9 +67,9 @@ const Footer = () => {
 
               <h5 className="footer-heading">CONTACT INFO</h5>
               <div className="contact-info">
-                <p>21 Taitarri Road, TOTTINGTON, Victoria 8478</p>
-                <p>(01) 123 456 789</p>
-                <p><a href="mailto:demo@demo.com">demo@demo.com</a></p>
+                <p>1500 Airport Rd, Jacksonville, FL 32218, United States</p>
+                <p>+1 904-741-4331</p>
+                {/* <p><a href="mailto:demo@demo.com">demo@demo.com</a></p> */}
               </div>
             </Col>
           </Row>
@@ -77,16 +77,10 @@ const Footer = () => {
 
         {/* Bottom Footer - Copyright and Mini Icon */}
         <div className="bottom-footer py-3">
-          <Container className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <Container className="d-flex flex-column flex-md-row justify-content-center align-items-center">
             <p className="copyright-text mb-2 mb-md-0">
-              © {new Date().getFullYear()}, <a href="#">Ap Bodoni</a>. Powered by Shopify.
+              © {new Date().getFullYear()}, <a target='_blank' href="https://quirkbeestech.in/">Quirkbeestech LLC</a>.
             </p>
-            <div className="footer-mini-icon">
-              <img
-                src="https://ap-bodoni.myshopify.com/cdn/shop/files/wine-bottle-icon.png?v=1638848302" // Placeholder: Replace with your actual mini icon URL
-                alt="Wine bottle icon"
-              />
-            </div>
           </Container>
         </div>
       </footer>
