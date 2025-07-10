@@ -1,5 +1,5 @@
-import React from "react";
-import "../pages/Bar.css"
+
+import "../bar.css"
 import Breadcrumbs from "../components/Breadcrumb";
 import bottletwo from "../assets/images/bottle-2.jpg"; // Assuming this is a white wine bottle
 import wine from "../assets/images/wine.png"; // Assuming this is a general wine bottle
@@ -85,7 +85,7 @@ const products = [
 const Product = () => {
     return (
         <>
-            <Breadcrumbs />
+            <Breadcrumbs currentPage="Shop"/>
 
             <div className="productSection">
                 <Container>

@@ -19,15 +19,15 @@ const Liqueur = () => {
   return (
     <>
       <Breadcrumbs currentPage="Liqueur" />
-      <Container fluid="xxl" className='section_spacing'>
+      {/* <Container fluid="xxl" className='section_spacing'>
           <HeroSliderLiqueur />
-      </Container>
+      </Container> */}
       <MeetPeopleLiqueur />
       <div className="social-gallery section_spacing">
           <Container>
               <div className="text-center mb-4">
               <p className="section-subtitle">SOCIAL MEDIA</p>
-              <h3 className="">FOLLOW OUR ACTIVITY</h3>
+              <h2 className="mb-5 fw-bold">Follow Our Activity</h2>
               </div>
 
               <div>
@@ -111,24 +111,22 @@ const Liqueur = () => {
               </div>
               </Col>
               <Col md={6}>
-              <h2 className="mb-4 fw-bold">Our Journey</h2>
+              <h2 className="mb-4 fw-bold">Where Quality Meets Convenience</h2>
               <p>
-                  Flight 747 Liquor Store & Lounge Bar was founded with one mission: to elevate your drinking experience. Inspired by global travel and luxury, our brand reflects high standards in both service and selection.
+                  Our liquor store isn’t just another bottle stop—it’s a trusted, well-stocked hub for locals, travelers, and anyone who appreciates good taste. Under new ownership, we’ve expanded our selection, upgraded our layout, and doubled down on service. Whether you’re hunting for your go-to brand or something rare, you’ll find it here—fast and easy.
               </p>
               <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                  anim id est laborum.
+                  Located just 2km from Jacksonville Airport, we’re perfect for quick pickups, last-minute grabs, or restocking before an event.
               </p>
   
               <div className="mt-4 ps-4 border-start border-4 border-primary">
                   <p className="fst-italic mb-1">
                   <strong className="fs-2 text-primary me-2">“</strong>
-                  Flight 747 Lounge & Bar Jacksonville’s premier Local Dive Bar and lounge experience
+                      “Best local liquor store—clean, stocked, and way better than before.”
+
                   </p>
-                  <p className="fw-semibold mt-3 mb-0">Sean Mtorriosn</p>
-                  <small className="text-muted">— Photographer</small>
+                  <p className="fw-semibold mt-3 mb-0">Alex R.</p>
+                  <small className="text-muted">— Frequent Customer</small>
               </div>
               </Col>
           </Row>

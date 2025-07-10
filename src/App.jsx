@@ -13,6 +13,7 @@ import Shop from './pages/Shop'
 import Liqueur from './pages/Liqueur'
 import LinkTree from './pages/LinkTree'
 import Product from './pages/Product'
+import BarPage from './pages/BarPage'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/bar-page" element={<BarPage />} />
         <Route path="/product" element={<Product />} />
         <Route path="/liqueur" element={<Liqueur />} />
         

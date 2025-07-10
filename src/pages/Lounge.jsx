@@ -8,7 +8,7 @@ import img4 from "../assets/images/bar-3.jpg";
 import img5 from "../assets/images/blog_image1.jpg";
 import img6 from "../assets/images/blog_image2.jpg";
 import img7 from "../assets/images/blog_image3.jpg";
-import about_img from "../assets/images/dinner_img.png"
+import about_img from "../assets/images/lounge_about.jpg"
 import "../lounge.css"
 import { Col, Container, Row } from 'react-bootstrap'
 import VideoSectionLounge from '../components/VideoSectionLounge';
@@ -21,9 +21,9 @@ const Lounge = () => {
   return (
     <>
         <Breadcrumbs currentPage="Lounge" />
-        <Container fluid="xxl" className='section_spacing'>
+        {/* <Container fluid="xxl" className='section_spacing'>
             <HeroSliderLounge />
-        </Container>
+        </Container> */}
         <Container className="section_spacing about_page">
             <Row className="align-items-center">
                 <Col md={6}>
@@ -36,24 +36,21 @@ const Lounge = () => {
                 </div>
                 </Col>
                 <Col md={6}>
-                <h2 className="mb-4 fw-bold">Our Journey</h2>
+                <h2 className="mb-4 fw-bold">How We Reimagined the Lounge</h2>
                 <p>
-                    Flight 747 Liquor Store & Lounge Bar was founded with one mission: to elevate your drinking experience. Inspired by global travel and luxury, our brand reflects high standards in both service and selection.
+                    The Lounge at Flight 747 isn’t just a room with chairs—it’s a destination. Revamped under new ownership, this space was designed to be Jacksonville’s go-to for relaxed nights, private conversations, and quality drinks. Think airport lounge luxury meets neighborhood comfort—where every visit feels like a smooth takeoff.
                 </p>
                 <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
+                    Whether you’re flying solo, catching up with friends, or killing time before your next flight, the lounge is your place to sit back and enjoy the moment.
                 </p>
     
                 <div className="mt-4 ps-4 border-start border-4 border-primary">
                     <p className="fst-italic mb-1">
                     <strong className="fs-2 text-primary me-2">“</strong>
-                    Flight 747 Lounge & Bar Jacksonville’s premier Local Dive Bar and lounge experience
+                    “A true local hangout—finally done right.”
                     </p>
-                    <p className="fw-semibold mt-3 mb-0">Sean Mtorriosn</p>
-                    <small className="text-muted">— Photographer</small>
+                    <p className="fw-semibold mt-3 mb-0">Devin W.</p>
+                    <small className="text-muted">— Lounge Regular</small>
                 </div>
                 </Col>
             </Row>
@@ -62,7 +59,7 @@ const Lounge = () => {
             <Container>
                 <div className="text-center mb-4">
                 <p className="section-subtitle">SOCIAL MEDIA</p>
-                <h3 className="">FOLLOW OUR ACTIVITY</h3>
+                <h2 className="mb-5 fw-bold">Follow Our Activity</h2>
                 </div>
 
                 <div>

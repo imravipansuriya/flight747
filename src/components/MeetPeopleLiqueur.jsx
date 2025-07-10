@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Container, Row, Col, Card } from "react-bootstrap"; 
 import Meet_first from "../assets/images/hero-banner-1.png"
 import Meet_two from "../assets/images/hero-banner-2.png"
@@ -11,42 +11,36 @@ import { BiMusic } from "react-icons/bi";
 
 const people = [
   {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
+    name: "Lorenzo G.",
+    title: "Spirits Enthusiast",
     image: Meet_first,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+    desc: "“Their bourbon shelf keeps surprising me—great stuff for the price.”",
   },
   {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
+    name: "Trina F.",
+    title: "Local Host",
     image: Meet_two,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+    desc: "“Picked up a case for a party before my flight. Super smooth.”",
   },
   {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
+    name: "Chris D.",
+    title: "Repeat Buyer",
     image: Meet_three,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-  },
-  {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
-    image: Meet_four,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+    desc: "“I’ve watched this place evolve—and I’m impressed. Real upgrade.”",
   },
 ];
 
 const MeetPeopleLiqueur = () => {
   return (
     <Container className="section_spacing text-center">
-      <h2 className="mb-5 fw-bold">Meet our people</h2>
+      <h2 className="mb-5 fw-bold">What Our Shoppers Say</h2>
       <Row className="g-4">
         {people.map((person, index) => (
-          <Col key={index} lg={3} sm={6}>
+          <Col key={index} md={4}>
             <Card className="border-0">
               <Card.Img variant="top" src={person.image} className="rounded" />
               <Card.Body className="p-0 mt-3">
-                <h6 className="fw-bold">{person.name}</h6>
+                <h6 className="fw-bold mb-2">{person.name}</h6>
                 <p className="text-muted text-uppercase" style={{ fontSize: "0.8rem" }}>
                   {person.title}
                 </p>

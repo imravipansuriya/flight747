@@ -41,6 +41,7 @@ const HeaderBar = () => {
                             <Link to="/product">Product</Link>
                             <Link to="/liqueur">Liqueur</Link>
                             <Link to="/lounge">Lounge</Link>
+                            <Link to="/bar-page">Bar</Link>
                             <Link to="/about">About Us</Link>
                             <Link to="/contact">Contact Us</Link>
                         </Nav>

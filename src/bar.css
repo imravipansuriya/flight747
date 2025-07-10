@@ -1,0 +1,128 @@
+.product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.product_image {
+    width: 110px;
+    margin: 30px auto;
+}
+
+.product_data {
+    border: none;
+    box-shadow: 0 0.125rem 2rem rgba(0, 0, 0, 0.075);
+}
+
+.product_name {
+    font-size: 25px;
+    font-family: "Faculty Glyphic", sans-serif;
+    text-align: center;
+}
+
+.product_data .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.cart_btn {
+    margin: 0 auto;
+}
+
+.premium_wines {
+    font-size: 35px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.cart_btn {
+    background-color: #0161b7;
+    border: 1px solid transparent;
+    padding: 8px 90px;
+}
+
+.cart_btn:hover {
+    color: #0161b7;
+    background-color: white;
+    border: 1px solid #0161b7;
+}
+
+
+.wine_bar {
+    background-color: #ecf5fe;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    padding: 60px 0;
+}
+
+.wine_shop {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wine_shop span {
+    color: #0161b7;
+    font-size: 15px;
+    
+}
+
+.wine_title {
+    text-align: center;
+}
+
+.wine_title h2 {
+    font-size: 50px;
+    
+    margin-bottom: 20px6
+}
+
+.bar_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.bar_img {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.shop_wrp h6 {
+    text-align: center;
+    color: #0161b7;
+}
+
+.shop_data {
+    margin: 20px 0 15px 0;
+}
+
+.shop_data span {
+    color: #0161b7;
+    font-size: 15px;
+    
+    margin: 20px 0;
+}
+
+.shop_wrp h4 {
+    font-size: 25px;
+    
+
+}
+
+.wine_image {
+    width: 140px;
+    margin: 20px auto;
+}
+
+.pre_card {
+    box-shadow: 0 0.125rem 2rem rgba(0, 0, 0, 0.075);
+    border: none;
+    text-align: center;
+}

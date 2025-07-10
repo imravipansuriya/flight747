@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Container, Button } from "react-bootstrap";
 
 const ExploreSection = () => {
@@ -9,7 +9,7 @@ const ExploreSection = () => {
     >
       <h1 className="fw-bold display-5 mb-4">Feel free, move free</h1>
       <p className="lead mb-4" style={{ maxWidth: "700px" }}>
-        Enjoy the feeling of freedom, that’s the feeling we want to capture when we design our products.
+        Flight 747 is more than a place to grab a drink—it’s where freedom meets flavor. From the buzz of the bar to the calm of the lounge, you’re always welcome to relax, recharge, and enjoy the ride.
       </p>
       <Button size="lg">
         Explore products

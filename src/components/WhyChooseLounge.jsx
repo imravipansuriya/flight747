@@ -1,25 +1,31 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap"; 
-import { BiSend } from "react-icons/bi";
-import { BsCreditCard } from "react-icons/bs";
-import { FiMessageCircle } from "react-icons/fi";
+
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { FaMendeley } from "react-icons/fa";
+import { IoLocate } from "react-icons/io5";
+import { LiaCocktailSolid } from "react-icons/lia";
+import { MdEvent } from "react-icons/md";
 
 const WhyChooseLounge = () => {
   const features = [
     {
-      icon: <BiSend size={40} />,
-      title: "Secure payments",
-      text: "See below for information about the delivery & returns options in your country.",
+      icon: <LiaCocktailSolid size={40} />,
+      title: "Signature Cocktails",
+      text: "Our bartenders pour classics with precision and mix originals with personality.",
     },
     {
-      icon: <BsCreditCard size={40} />,
-      title: "Secure payments",
-      text: "See below for information about the delivery & returns options in your country.",
+      icon: <FaMendeley  size={40} />,
+      title: "Chill, Not Chaotic",
+      text: "Low lights. Good music. Comfortable seating. No chaos—just clean vibes.",
     },
     {
-      icon: <FiMessageCircle size={40} />,
-      title: "Secure payments",
-      text: "See below for information about the delivery & returns options in your country.",
+      icon: <IoLocate size={40} />,
+      title: "Minutes from JAX",
+      text: "Located just 2km from the airport. Stop in pre-flight, post-flight, or while waiting on a ride.",
+    },
+    {
+      icon: <MdEvent size={40} />,
+      title: "Weekly Events & Tastings",
+      text: "Live music, game nights, whiskey tastings—there’s always something happening in the lounge.",
     },
   ];
 
@@ -27,10 +33,10 @@ const WhyChooseLounge = () => {
     <div className="section_spacing">
       <div className="why_choose">
         <Container>
-          <h2 className="text-center mb-5 fw-semibold">Why choose us</h2>
+          <h2 className="text-center mb-5 fw-semibold">What Sets Our Lounge Apart</h2>
           <Row className="g-4">
             {features.map((item, index) => (
-              <Col key={index} md={4}>
+              <Col key={index} xl={3} md={6}>
                 <Card className="text-center border-0 shadow-sm p-4 h-100">
                   <div className="mb-3">{item.icon}</div>
                   <Card.Title className="fw-medium">{item.title}</Card.Title>

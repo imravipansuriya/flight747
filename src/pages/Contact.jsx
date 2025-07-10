@@ -7,8 +7,9 @@ import "../contact.css"
 import staff_first from "../assets/images/hero-banner-1.png"
 import staff_second from "../assets/images/hero-banner-2.png"
 import staff_third from "../assets/images/hero-banner-3.png"
-import { BiMapPin, BiPhone } from 'react-icons/bi';
+import { BiMapPin, BiMessageRoundedMinus, BiPhone } from 'react-icons/bi';
 import { BsGlobe, BsMailbox } from 'react-icons/bs';
+import { MdOutlineEmail } from 'react-icons/md';
 
 const Contact = () => {
   const staff = [
@@ -41,18 +42,32 @@ const Contact = () => {
         <Col lg={5}>
           <div className="text-center text-lg-start mb-5 mb-lg-0">
             <h1 className="display-5 fw-semibold mb-4">
-              Visit one of our agency locations or contact us today.
+              We’d Love to Hear From You
             </h1>
             <p className="mb-4 text-muted">
-              Apollo themes features beautifully sectioned layout that allows you to showcase featured items for each category on the homepage. It comes with many different homepage layouts, so you can choose any suitable homepage for your store.
+              Got a question about our bar, lounge, liquor store, or upcoming events? Want to book a private tasting or check stock before you swing by? We’re here—online or in person.
             </p>
           </div>
-          <h4 className="fw-bold mt-4 mb-3">Head Office</h4>
+          <div className="text-center text-lg-start mb-5 mb-lg-0">
+            <h4 className=" fw-semibold mb-2">
+              Visit Us
+            </h4>
+            <p className="mb-4 text-muted">
+              Drop by Flight 747 Jacksonville, just 2km from Jacksonville International Airport. Whether it’s for a quick pickup, a relaxed drink, or a full night out—we're always ready to welcome you.
+            </p>
+          </div>
+          <h4 className="fw-bold mt-4 mb-3">Prefer to Reach Out?</h4>
           <div className="contact_details">
             <Link to='https://maps.app.goo.gl/RYEa4DJivtQfnZsEA' target='_blank'><BiMapPin size={16} className="me-2" />1500 Airport Rd, Jacksonville, FL 32218, United States</Link>
             <a href='tel:19047414331'><BiPhone size={16} className="me-2" />+19047414331</a>
-            <Link to='#'><BsMailbox size={16} className="me-2" />demo@demo.com</Link>
-            <Link to='#'><BsGlobe size={16} className="me-2" />www.example.com</Link>
+            <a href="mailto:Flight747lounge25@gmail.com">
+              <MdOutlineEmail size={16} className="me-2"/>
+              Flight747lounge25@gmail.com
+            </a>
+            <Link to="https://wa.me/19047414331?text=Hi!%20I%20was%20checking%20out%20Flight%20747%20Jacksonville%20and%20had%20a%20quick%20question." target='_blank'>
+              <BiMessageRoundedMinus size={16} className="me-2"/>
+              message Us
+            </Link>
           </div>
         </Col>
 

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Container, Row, Col, Card } from "react-bootstrap"; 
 import Meet_first from "../assets/images/hero-banner-1.png"
 import Meet_two from "../assets/images/hero-banner-2.png"
@@ -11,42 +11,36 @@ import { BiMusic } from "react-icons/bi";
 
 const people = [
   {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
+    name: "Tamika G.",
+    title: "Local Customer",
     image: Meet_first,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+    desc: "“The Flight 747 revamp is exactly what the Northside needed—clean, classy, and convenient.”",
   },
   {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
+    name: "Derrick L.",
+    title: "Regular Guest",
     image: Meet_two,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+    desc: "“I used to come here for a quick bottle. Now I stay for the drinks and atmosphere.”",
   },
   {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
+    name: "Luis M.",
+    title: "Jacksonville Native",
     image: Meet_three,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-  },
-  {
-    name: "EMMA WATSON",
-    title: "CEO/FOUNDER",
-    image: Meet_four,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+    desc: "“It feels like a real destination now. You can tell the new team actually gives a damn.”",
   },
 ];
 
 const MeetPeople = () => {
   return (
     <Container className="section_spacing text-center">
-      <h2 className="mb-5 fw-bold">Meet our people</h2>
+      <h2 className="mb-5 fw-bold"> What Locals Say</h2>
       <Row className="g-4">
         {people.map((person, index) => (
-          <Col key={index} lg={3} sm={6}>
+          <Col key={index} md={4}>
             <Card className="border-0">
               <Card.Img variant="top" src={person.image} className="rounded" />
               <Card.Body className="p-0 mt-3">
-                <h6 className="fw-bold">{person.name}</h6>
+                <h6 className="fw-bold mb-2">{person.name}</h6>
                 <p className="text-muted text-uppercase" style={{ fontSize: "0.8rem" }}>
                   {person.title}
                 </p>
