@@ -139,14 +139,13 @@ const OurTopPicks = () => {
 
   return (
     <div className="top-picks-section">
-      <Container className="text-center">
+      <Container >
         <p className="shop-text">SHOP</p>
         <h2 className="section-title">Our Top Picks</h2>
         <p className="section-description mb-5">
           Join our family of wine lovers and be the first to taste <br />
           our new releases and attend special events.
         </p>
-
         <Tab.Container id="top-picks-tabs" activeKey={key} onSelect={(k) => setKey(k)}>
           <Nav variant="pills" className="justify-content-center top-picks-nav">
             {tabsConfig.map((tab) => (

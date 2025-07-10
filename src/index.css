@@ -29,6 +29,10 @@
    margin: 0;
  }
 
+ p {
+   font-family: "Jost", sans-serif;
+ }
+
  img {
    max-width: 100%;
    height: auto;
@@ -39,6 +43,7 @@
    font-weight: 500;
    color: #007cc4;
    text-decoration: inherit;
+   font-family: "Faculty Glyphic", sans-serif;
  }
 
  .btn-primary {
@@ -56,7 +61,9 @@
    /* font-family: "Tangerine", cursive;   -- Writing text */
  }
 
-
+ span {
+   font-family: "Jost", sans-serif;
+ }
 
  h1 {
    font-size: 3.2em;

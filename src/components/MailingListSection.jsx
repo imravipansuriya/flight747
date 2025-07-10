@@ -5,7 +5,7 @@ import '../assets/style/Home.css'; // Create this CSS file for styling
 
 const MailingListSection = () => {
   return (
-    <div className="mailing-list-section py-5">
+    <div className="mailing-list-section">
       <Container className="text-center">
         <p className="mailing-list-subtitle">STAY CONNECT</p>
         <h2 className="mailing-list-title">Join Our Mailing List</h2>

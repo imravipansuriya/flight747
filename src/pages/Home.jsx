@@ -1,5 +1,4 @@
 import { Button, Card, Carousel, Col, Container, Navbar, Row } from "react-bootstrap";
-
 import { FaArrowRight, FaBoxOpen, FaGift, FaTruck, FaWineGlassAlt, FaRegHeart, FaRegEye, FaShoppingBag, FaExpandArrowsAlt } from "react-icons/fa";
 import { useState } from "react";
 import OurTopPicks from "../components/OurTopPicks";
@@ -19,6 +18,7 @@ import CategoryHome from "../components/CategoryHome";
 import blogImg1 from "../assets/images/blog_image1.jpg";
 import blogImg2 from "../assets/images/blog_image2.jpg";
 import blogImg3 from "../assets/images/blog_image3.jpg";
+import "../assets/style/Home.css";
 
 const Home = () => {
 
@@ -111,7 +111,7 @@ const Home = () => {
                 <div className="feature-section-container">
                     <Container>
                         <Row className="justify-content-center text-center">
-                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                            <Col xs={12} sm={12} md={6} lg={3}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <CiGift size={40} className="feature-icon" />
@@ -123,7 +123,7 @@ const Home = () => {
                                 </div>
                             </Col>
 
-                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                            <Col xs={12} sm={12} md={6} lg={3}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <BsBox2Heart size={30} className="feature-icon" />
@@ -135,7 +135,7 @@ const Home = () => {
                                 </div>
                             </Col>
 
-                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                            <Col xs={12} sm={12} md={6} lg={3}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <PiWineDuotone size={30} className="feature-icon" />
@@ -147,7 +147,7 @@ const Home = () => {
                                 </div>
                             </Col>
 
-                            <Col xs={12} sm={6} md={3} className="p-lg-0">
+                            <Col xs={12} sm={12} md={6} lg={3}>
                                 <div className="feature-item">
                                     <div className="img-icon">
                                         <LiaShippingFastSolid size={30} className="feature-icon" />
@@ -222,12 +222,12 @@ const Home = () => {
                     </Container>
                 </div>
             </Container>
-            <Container>
+             
                 <OurTopPicks />
-            </Container>
-            <Container className="category-container">
+             
+            {/* <Container className="category-container">
                 <CategoryHome />
-            </Container>
+            </Container> */}
             <Container>
                 <div className="discover-section-wrapper">
                     {/* Top Hero/Banner Section */}
@@ -277,7 +277,7 @@ const Home = () => {
                 </div>
             </Container>
 
-            <div className="blog-section py-5">
+            <div className="blog-section ">
                 <Container className="text-center">
                     <p className="blog-subtitle">THE LATEST</p>
                     <h2 className="blog-title">From The Blog</h2>

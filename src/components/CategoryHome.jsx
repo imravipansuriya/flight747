@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa'; 
 import CardImage1 from '../assets/images/card-1.jpg';
 import CardImage2 from '../assets/images/card-2.png';
