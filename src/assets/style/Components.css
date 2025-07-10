@@ -15,8 +15,12 @@ a.navbar-brand img {
     object-fit: contain;
 }
 
-.header .navbar-collapse a.nav-link {
+.header .navbar-collapse a {
     padding: 15px 20px;
     font-size: 13px;
     font-family: "Faculty Glyphic", sans-serif;
+    color: #000;
+}
+.header .navbar-collapse a:hover {
+    color: #0161b7;
 }

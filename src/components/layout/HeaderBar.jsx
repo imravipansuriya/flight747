@@ -4,6 +4,7 @@ import logo from "../../assets/images/logo.png"
 import { useState } from "react";
 
 import "../../assets/style/Components.css"
+import { Link } from "react-router-dom";
 
 const HeaderBar = () => {
     const [searchBarOpen, setSearchBarOpen] = useState(false);
@@ -36,11 +37,11 @@ const HeaderBar = () => {
                     )}
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto text-uppercase fw-semibold">
-                            <Nav.Link to="/">Home</Nav.Link>
-                            <Nav.Link to="/bar">Bar</Nav.Link>
-                            <Nav.Link to="/lounge">Lounge</Nav.Link>
-                            <Nav.Link to="/about">About Us</Nav.Link>
-                            <Nav.Link to="/contact">Contact Us</Nav.Link>
+                            <Link to="/">Home</Link>
+                            <Link to="/bar">Bar</Link>
+                            <Link to="/lounge">Lounge</Link>
+                            <Link to="/about">About Us</Link>
+                            <Link to="/contact">Contact Us</Link>
                         </Nav>
                     </Navbar.Collapse>
                     {/* Right: Profile & Cart */}
