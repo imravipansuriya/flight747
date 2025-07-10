@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa'; // For the arrow icon
-import '../assets/style/Home.css'; // Create this CSS file for styling
+import '../assets/style/home.css'; // Create this CSS file for styling
 import { Link } from 'react-router-dom';
 
 const MailingListSection = () => {
