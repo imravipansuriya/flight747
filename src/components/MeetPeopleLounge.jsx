@@ -36,7 +36,7 @@ const people = [
   },
 ];
 
-const MeetPeople = () => {
+const MeetPeopleLounge = () => {
   return (
     <Container className="section_spacing text-center">
       <h2 className="mb-5 fw-bold">Meet our people</h2>
@@ -71,4 +71,4 @@ const MeetPeople = () => {
   );
 };
 
-export default MeetPeople;
+export default MeetPeopleLounge;

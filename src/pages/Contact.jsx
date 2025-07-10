@@ -36,7 +36,7 @@ const Contact = () => {
   ];
   return (<>
     <Breadcrumbs currentPage="Contact Us" />
-    <Container className="py-5 px-4">
+    <Container className="section_spacing px-4">
       <Row className="align-items-start">
         <Col lg={5}>
           <div className="text-center text-lg-start mb-5 mb-lg-0">
@@ -73,7 +73,7 @@ const Contact = () => {
         </Col>
       </Row>
     </Container>
-    <Container className='mb-5'>
+    <Container className='section_spacing'>
       <div className='border rounded p-4 contact_form'>
         <Row>
           <Col lg={8}>
@@ -101,7 +101,7 @@ const Contact = () => {
             <h4 className="mb-4">Our staff</h4>
             {staff.map((member, idx) => (
               <div className="our_staff d-flex mb-4" key={idx}>
-                <Image src={member.image} width={80} height={100} rounded className="me-3 object-fit-cover" />
+                <Image src={member.image} width={80} height={100} className="me-3 object-fit-cover" />
                 <div>
                   <strong>{member.name}</strong>
                   <p className="mb-1">{member.role}</p>

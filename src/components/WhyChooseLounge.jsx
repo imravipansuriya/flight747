@@ -4,7 +4,7 @@ import { BiSend } from "react-icons/bi";
 import { BsCreditCard } from "react-icons/bs";
 import { FiMessageCircle } from "react-icons/fi";
 
-const WhyChooseUs = () => {
+const WhyChooseLounge = () => {
   const features = [
     {
       icon: <BiSend size={40} />,
@@ -45,4 +45,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default WhyChooseLounge;

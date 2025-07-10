@@ -228,7 +228,7 @@ const Home = () => {
             {/* <Container className="category-container">
                 <CategoryHome />
             </Container> */}
-            <Container>
+            <Container className="section_spacing">
                 <div className="discover-section-wrapper">
                     {/* Top Hero/Banner Section */}
                     <div className="hero-banner-section">

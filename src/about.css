@@ -2,7 +2,6 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 20px;
 }
 .social_icon {
     width: 35px;
@@ -51,4 +50,8 @@
 .explore_section .btn {
     background-color: #0161b7;
     border: none;
+}
+.why_choose {
+    background-color: #f8f8f8;
+    padding: 60px 0;
 }

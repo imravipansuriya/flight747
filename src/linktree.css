@@ -1,0 +1,35 @@
+.link_tree {
+    background-image: url(../assets/dinner_img_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+.link_tree::after {
+    content: "";
+    position: absolute;
+    background-color: #3a3a3a;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 10px;
+}
+.link_tree h2 {
+    color: #fff;
+}
+.link_tree p {
+    color: #fff !important;
+}
+.link_tree a {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.4s;
+}
+.link_tree a:hover {
+    background-color: #0161b7;
+    color: #fff;
+}

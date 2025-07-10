@@ -5,10 +5,13 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Shop from './pages/Shop'
 import Home from './pages/Home'
-import Bar from './pages/Bar'
+import Bar from './pages/Shop'
 import Lounge from './pages/Lounge'
+import ProductDetails from './pages/ProductDetails'
+import Shop from './pages/Shop'
+import Liqueur from './pages/Liqueur'
+import LinkTree from './pages/LinkTree'
 
 function App() {
   return (
@@ -18,8 +21,10 @@ function App() {
         <Route path="/lounge" element={<Lounge />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/bar" element={<Bar />} />
+        <Route path="/liqueur" element={<Liqueur />} />
+        <Route path="/link-tree" element={<LinkTree />} />
       </Route>
     </Routes>
   )

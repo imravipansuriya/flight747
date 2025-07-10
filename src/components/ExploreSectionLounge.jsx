@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 
-const ExploreSection = () => {
+const ExploreSectionLounge = () => {
   return (
     <Container
       fluid
@@ -18,4 +18,4 @@ const ExploreSection = () => {
   );
 };
 
-export default ExploreSection;
+export default ExploreSectionLounge;

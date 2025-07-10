@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap"; 
 import { BiPlay } from "react-icons/bi";
 
-const VideoSection = () => {
+const VideoSectionLounge = () => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(true);
@@ -54,4 +54,4 @@ const VideoSection = () => {
   );
 };
 
-export default VideoSection;
+export default VideoSectionLounge;

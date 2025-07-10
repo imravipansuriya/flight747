@@ -38,7 +38,8 @@ const HeaderBar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto text-uppercase fw-semibold">
                             <Link to="/">Home</Link>
-                            <Link to="/bar">Bar</Link>
+                            <Link to="/shop">Shop</Link>
+                            <Link to="/liqueur">Liqueur</Link>
                             <Link to="/lounge">Lounge</Link>
                             <Link to="/about">About Us</Link>
                             <Link to="/contact">Contact Us</Link>

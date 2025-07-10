@@ -8,13 +8,17 @@ import Breadcrumbs from "../components/Breadcrumb";
 import MeetPeople from "../components/MeetPeople";
 import VideoSection from "../components/VideoSection";
 import ExploreSection from "../components/ExploreSection";
+import HeroSlider from "../components/HeroSlider";
 
 const About = () => {
 
   return (
     <>
       <Breadcrumbs currentPage="About Us" />
-      <Container className="py-5 about_page">
+      <Container fluid="xxl" className='section_spacing'>
+          <HeroSlider />
+      </Container>
+      <Container className="section_spacing about_page">
         <Row className="align-items-center">
           <Col md={6}>
             <div className="about_img mb-4 mb-md-0">

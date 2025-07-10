@@ -156,7 +156,7 @@
 
 .category-grid-section {
     background-color: #ffffff;
-    margin: 130px 0;
+    margin: 100px 0;
 }
 
 .category-grid-section .category-card {
@@ -212,7 +212,7 @@
 .product-slider-section {
     background-size: cover;
     background-position: center;
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 
@@ -357,7 +357,6 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-    padding-bottom: 20px;
 }
 
 .product-image-container {
@@ -501,7 +500,7 @@
 .blog-section {
     font-family: serif;
     color: #333;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
 }
 
 .blog-subtitle {
@@ -652,7 +651,7 @@
     padding: 100px 0;
     font-family: serif;
     color: #333;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
 }
 
 .mailing-list-subtitle {
@@ -731,12 +730,11 @@
 }
 
 .discover-section-wrapper {
-    margin-bottom: 130px;
+    margin-bottom: 100px;
 }
 
 .client-logo-section {
     overflow: hidden;
-    margin-bottom: 130px;
 }
 
 .client-logo-swiper {

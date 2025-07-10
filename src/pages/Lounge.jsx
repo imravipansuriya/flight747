@@ -8,59 +8,57 @@ import img4 from "../assets/images/bar-3.jpg";
 import img5 from "../assets/images/blog_image1.jpg";
 import img6 from "../assets/images/blog_image2.jpg";
 import img7 from "../assets/images/blog_image3.jpg";
+import about_img from "../assets/images/dinner_img.png"
 import "../lounge.css"
 import { Col, Container, Row } from 'react-bootstrap'
+import VideoSectionLounge from '../components/VideoSectionLounge';
+import MeetPeopleLounge from '../components/MeetPeopleLounge';
+import ExploreSectionLounge from '../components/ExploreSectionLounge';
+import WhyChooseLounge from '../components/WhyChooseLounge';
+import HeroSliderLounge from '../components/HeroSliderLounge';
 
 const Lounge = () => {
   return (
     <>
         <Breadcrumbs currentPage="Lounge" />
-        <div className="bar-section pt-5">
-            <Container>
-                <Row className="align-items-center mb-4">
-                    <Col lg={6} className='order-lg-1 order-2 mt-4 mt-lg-0'>
-                        <p className="sub-title mb-2">Sip, Savor & Enjoy</p>
-                        <h2 className=" mb-3">ALIBI BAR & LOUNGE</h2>
-                        <p className="description">
-                        Alibi Bar & Lounge offers a sophisticated twist on dining and drinking. In our elegant
-                        and intimate setting, we feature a creative menu of handcrafted cocktails and exquisite
-                        small plates. Our bar, focused on mixology, skillfully reinvents classic cocktails with
-                        fresh, seasonal ingredients from local markets, continually crafting new experiences.
-                        Join us for an unparalleled atmosphere, exceptional products, and top-tier service,
-                        where every visit is not just a night out, but a memorable experience.
-                        </p>
-                        <a href="#" className="read-more">Read More &gt;</a>
-                    </Col>
-
-                    <Col lg={6} className="text-center order-lg-2 order-1">
-                        <div className="image-wrapper">
-                        <img src={barImg} alt="Alibi Bar" className="img-fluid bar-img" />
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="align-items-center">
-                    <Col lg={6} className="text-center mt-4 mt-md-0 lounge_second">
-                        <div className="image-wrapper">
-                        <img src={barImg} alt="Alibi Bar" className="img-fluid bar-img" />
-                        </div>
-                    </Col>
-                    <Col lg={6} className='mt-4 mt-lg-0'>
-                        <p className="sub-title mb-2">Sip, Savor & Enjoy</p>
-                        <h2 className="mb-3">ALIBI BAR & LOUNGE</h2>
-                        <p className="description">
-                        Alibi Bar & Lounge offers a sophisticated twist on dining and drinking. In our elegant
-                        and intimate setting, we feature a creative menu of handcrafted cocktails and exquisite
-                        small plates. Our bar, focused on mixology, skillfully reinvents classic cocktails with
-                        fresh, seasonal ingredients from local markets, continually crafting new experiences.
-                        Join us for an unparalleled atmosphere, exceptional products, and top-tier service,
-                        where every visit is not just a night out, but a memorable experience.
-                        </p>
-                        <a href="#" className="read-more">Read More &gt;</a>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-        <div className="social-gallery py-5">
+        <Container fluid="xxl" className='section_spacing'>
+            <HeroSliderLounge />
+        </Container>
+        <Container className="section_spacing about_page">
+            <Row className="align-items-center">
+                <Col md={6}>
+                <div className="about_img mb-4 mb-md-0">
+                    <img
+                    src={about_img}
+                    alt=""
+                    className="img-fluid"
+                    />
+                </div>
+                </Col>
+                <Col md={6}>
+                <h2 className="mb-4 fw-bold">Our Journey</h2>
+                <p>
+                    Flight 747 Liquor Store & Lounge Bar was founded with one mission: to elevate your drinking experience. Inspired by global travel and luxury, our brand reflects high standards in both service and selection.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+    
+                <div className="mt-4 ps-4 border-start border-4 border-primary">
+                    <p className="fst-italic mb-1">
+                    <strong className="fs-2 text-primary me-2">“</strong>
+                    Flight 747 Lounge & Bar Jacksonville’s premier Local Dive Bar and lounge experience
+                    </p>
+                    <p className="fw-semibold mt-3 mb-0">Sean Mtorriosn</p>
+                    <small className="text-muted">— Photographer</small>
+                </div>
+                </Col>
+            </Row>
+        </Container>
+        <div className="social-gallery section_spacing">
             <Container>
                 <div className="text-center mb-4">
                 <p className="section-subtitle">SOCIAL MEDIA</p>
@@ -135,7 +133,11 @@ const Lounge = () => {
                     </Row>  
                 </div>
             </Container>
-            </div>
+        </div>
+        <VideoSectionLounge />
+        <MeetPeopleLounge />
+        <WhyChooseLounge />
+        <ExploreSectionLounge />
     </>
   )
 }
