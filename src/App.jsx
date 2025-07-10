@@ -26,9 +26,10 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/product" element={<Product />} />
         <Route path="/liqueur" element={<Liqueur />} />
-        <Route path="/link-tree" element={<LinkTree />} />
+        
         <Route path="/shop/:id" element={<Shop />} />
       </Route>
+      <Route path="/sticker" element={<LinkTree />} />
     </Routes>
   )
 }
