@@ -42,7 +42,7 @@ const MeetPeople = () => {
       <h2 className="mb-5 fw-bold">Meet our people</h2>
       <Row className="g-4">
         {people.map((person, index) => (
-          <Col key={index} md={3}>
+          <Col key={index} lg={3} sm={6}>
             <Card className="border-0">
               <Card.Img variant="top" src={person.image} className="rounded" />
               <Card.Body>

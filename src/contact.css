@@ -16,3 +16,14 @@
     background-color: #0161b7;
     border: none;
 }
+@media screen and (max-width: 355px) {
+    .contact_form .our_staff {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .contact_form .our_staff img {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}

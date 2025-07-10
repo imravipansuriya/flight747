@@ -13,11 +13,11 @@ const About = () => {
 
   return (
     <>
-      <Breadcrumbs />
+      <Breadcrumbs currentPage="About Us" />
       <Container className="py-5 about_page">
         <Row className="align-items-center">
           <Col md={6}>
-            <div className="about_img">
+            <div className="about_img mb-4 mb-md-0">
               <img
                 src={about_img}
                 alt=""

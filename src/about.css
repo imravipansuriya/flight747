@@ -46,4 +46,9 @@
     border: none;
     background-color: unset !important;
     filter: invert(100%) sepia(8%) saturate(0%) hue-rotate(259deg) brightness(106%) contrast(105%);
+    box-shadow: unset !important;
+}
+.explore_section .btn {
+    background-color: #0161b7;
+    border: none;
 }
