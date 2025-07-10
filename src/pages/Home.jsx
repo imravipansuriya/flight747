@@ -18,7 +18,7 @@ import CategoryHome from "../components/CategoryHome";
 import blogImg1 from "../assets/images/blog_image1.jpg";
 import blogImg2 from "../assets/images/blog_image2.jpg";
 import blogImg3 from "../assets/images/blog_image3.jpg";
-import "../assets/style/Home.css";
+import "../assets/style/home.css";
 import AgeVerificationModal from "../components/AgeVerificationModal";
 
 const Home = () => {

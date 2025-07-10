@@ -33,7 +33,8 @@ const OurTopPicks = () => {
         products.map((product) => (
           <Col key={product._id} xs={12} sm={6} md={4} className="mb-4">
             <Card className="product-card">
-              <div className="product-image-container" onClick={()=>navigate(`/shop/${product._id}`)}>
+              <div className="product-image-container" >
+                {/* onClick={()=>navigate(`/shop/${product._id}`)} */}
                 <Card.Img
                   variant="top"
                   src={product.images?.[0] || "https://via.placeholder.com/300"}
@@ -63,6 +64,9 @@ const OurTopPicks = () => {
                 <Card.Title className="product-name">{product.name}</Card.Title>
                 <Card.Text className="product-price">
                   ${product.priceAfterDiscount}
+                </Card.Text>
+                <Card.Text className="product-price" >
+                  {product.summary}
                 </Card.Text>
               </Card.Body>
             </Card>
