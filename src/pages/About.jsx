@@ -1,7 +1,7 @@
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import about_img from "../assets/images/dinner_img.png"
+import about_img from "../assets/images/about.png"
 import "../about.css"
 import WhyChooseUs from "../components/WhyChooseAbout";
 import Breadcrumbs from "../components/Breadcrumb";

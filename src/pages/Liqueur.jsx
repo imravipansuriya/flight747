@@ -2,7 +2,7 @@ import React from 'react'
 import Breadcrumbs from '../components/Breadcrumb'
 import { Container } from 'react-bootstrap'
 import { Col, Row } from 'react-bootstrap'
-import about_img from "../assets/images/dinner_img.png"
+import about_img from "../assets/images/liqueur_about.jpg"
 import img1 from "../assets/images/1.jpg";
 import img2 from "../assets/images/bar-1.jpg";
 import img3 from "../assets/images/bar-2.jpg";

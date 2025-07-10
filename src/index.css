@@ -171,10 +171,11 @@
 .breadcrumb .breadcrumb-item.active {
   color: #1a1a1a;
 }
-/* .card-img-top {
+.meet_user .card-img-top {
   width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: top;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-} */
+  box-shadow: 0 1px 10px rgb(0 ,0, 0, 0.2);
+  border-radius: 0;
+}

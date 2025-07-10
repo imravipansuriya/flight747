@@ -8,7 +8,7 @@ import img4 from "../assets/images/bar-3.jpg";
 import img5 from "../assets/images/blog_image1.jpg";
 import img6 from "../assets/images/blog_image2.jpg";
 import img7 from "../assets/images/blog_image3.jpg";
-import about_img from "../assets/images/dinner_img.png"
+import about_img from "../assets/images/bar_about.jpg"
 import "../lounge.css"
 import { Col, Container, Row } from 'react-bootstrap'
 import VideoSectionBar from '../components/VideoSectionBar';

@@ -3,7 +3,6 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import Meet_first from "../assets/images/user_1.jpg"
 import Meet_two from "../assets/images/user_2.jpg"
 import Meet_three from "../assets/images/user_3.jpg"
-import Meet_four from "../assets/images/hero-banner-4.png"
 import "../about.css"
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
@@ -32,7 +31,7 @@ const people = [
 
 const MeetPeopleLounge = () => {
   return (
-    <Container className="section_spacing text-center">
+    <Container className="section_spacing text-center meet_user">
       <h2 className="mb-5 fw-bold">Straight From the Locals</h2>
       <Row className="g-4">
         {people.map((person, index) => (

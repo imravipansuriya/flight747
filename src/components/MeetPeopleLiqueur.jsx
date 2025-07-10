@@ -1,9 +1,8 @@
 
 import { Container, Row, Col, Card } from "react-bootstrap"; 
-import Meet_first from "../assets/images/hero-banner-1.png"
-import Meet_two from "../assets/images/hero-banner-2.png"
-import Meet_three from "../assets/images/hero-banner-3.png"
-import Meet_four from "../assets/images/hero-banner-4.png"
+import Meet_first from "../assets/images/user_6.jpg"
+import Meet_two from "../assets/images/user_4.jpg"
+import Meet_three from "../assets/images/user_5.jpg"
 import "../about.css"
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
