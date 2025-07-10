@@ -12,6 +12,7 @@ import ProductDetails from './pages/ProductDetails'
 import Shop from './pages/Shop'
 import Liqueur from './pages/Liqueur'
 import LinkTree from './pages/LinkTree'
+import Product from './pages/Product'
 
 function App() {
   return (
@@ -23,8 +24,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/liqueur" element={<Liqueur />} />
         <Route path="/link-tree" element={<LinkTree />} />
+        <Route path="/bar" element={<Bar />} />
+        <Route path="/shop/:id" element={<Shop />} />
       </Route>
     </Routes>
   )
